@@ -72,14 +72,14 @@ function addProveedores($conn) {
 
   if (!empty($data['nombre']) && !empty($data['cuit']) && !empty($data['domicilio']) && !empty($data['celular'])) {
     $nombre = $data['nombre'];
-    $apellido = $data['cuit'];
+    $cuit = $data['cuit'];
     $domicilio = $data['domicilio'];
     $celular = $data['celular'];
 
-    $sql = "INSERT INTO usuarios (nombre, cuit, domicilio, celular) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO proveedores (nombre, cuit, domicilio, celular) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("sssi", $nombre, $apellido, $domicilio, $celular);
+    $stmt->bind_param("sisi", $nombre, $cuit, $domicilio, $celular);
 
     if ($stmt->execute()) {
       echo json_encode(['success' => 'Proveedor creado correctamente']);
@@ -131,10 +131,10 @@ function updateProveedores($conn) {
       $cuit = $data['cuit'];
       $celular = $data['celular'];
 
-      $sql = "UPDATE usuarios SET nombre = ?, cuit = ?, docimicilio = ?, celular = ?  WHERE id = ?";
+      $sql = "UPDATE proveedores SET nombre = ?, cuit = ?, domicilio = ?, celular = ?  WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sssii", $nombre, $cuit, $domicilio, $celular, $id);
+      $stmt->bind_param("sisii", $nombre, $cuit, $domicilio, $celular, $id);
 
       if ($stmt->execute()) {
       echo json_encode(['success' => 'Proveedor actualizado correctamente']);

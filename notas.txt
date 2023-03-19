@@ -3,13 +3,12 @@ ya
 equipos *api
 servicios *api
 usuarios *api
-
+categorias *db *api
+marcas *db *api
+proveedores *db *api
 
 falta
 
 inventario
-	categorias *db *api
-	marcas *db
-	proveedores *db *api
 	solicitudes 
 	productos
