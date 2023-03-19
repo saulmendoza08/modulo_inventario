@@ -1,0 +1,1786 @@
+[
+    {
+    "nombre": "SERVERHP",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0217",
+    "descripcion": "CATA - Gabriel Eloy Palacio"
+    },
+    {
+    "nombre": "HP0235",
+    "descripcion": "UCI 2 - Ulsera por Presion"
+    },
+    {
+    "nombre": "HP0214",
+    "descripcion": "MESA DE ENTRADA - Ana Fuentes"
+    },
+    {
+    "nombre": "HP0256",
+    "descripcion": "RECUPERO DE COSTOS - Dra Maria Vicenta Sal"
+    },
+    {
+    "nombre": "HP0257",
+    "descripcion": "RECUPERO DE COSTOS - Tamara Salomon"
+    },
+    {
+    "nombre": "HP0255",
+    "descripcion": "RECUPERO DE COSTOS - Dr Carlos Sinquemani"
+    },
+    {
+    "nombre": "HP0322",
+    "descripcion": "SALA 3 - HEMATOLOGIA - Consultorio"
+    },
+    {
+    "nombre": "HP0008",
+    "descripcion": "TORAX - Consultorio"
+    },
+    {
+    "nombre": "HP0050",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Curaciones - Walter Vega"
+    },
+    {
+    "nombre": "HP0288",
+    "descripcion": "ARCHIVO - Puesto 3"
+    },
+    {
+    "nombre": "HP0106",
+    "descripcion": "DEPTO DE ENFERMERIA - Puesto 3"
+    },
+    {
+    "nombre": "HP0105",
+    "descripcion": "DEPTO DE ENFERMERIA - Maria Mulet"
+    },
+    {
+    "nombre": "HP0284",
+    "descripcion": "HEMODINAMIA - Informes Medicos"
+    },
+    {
+    "nombre": "HP0103",
+    "descripcion": "SALA 10 - Secretaria - Teresa Acosta"
+    },
+    {
+    "nombre": "HP0003",
+    "descripcion": "INFORMATICA - Administrativo- Fabian Ponce"
+    },
+    {
+    "nombre": "HP0101",
+    "descripcion": "SALA 10 - Residencia de Medicos - PC Norte"
+    },
+    {
+    "nombre": "HP0080",
+    "descripcion": "ODONTOLOGIA - Secretario - Emanuel Ayala"
+    },
+    {
+    "nombre": "HP0211",
+    "descripcion": "PERSONAL - Gabriela Tacconi"
+    },
+    {
+    "nombre": "HP0210",
+    "descripcion": "PERSONAL - Elizabeth Mezhler"
+    },
+    {
+    "nombre": "HP0152",
+    "descripcion": "GUARDIA - Secretaria"
+    },
+    {
+    "nombre": "HP0153",
+    "descripcion": "GUARDIA - Secretaria Maria Elena Quiroga"
+    },
+    {
+    "nombre": "HP0151",
+    "descripcion": "GUARDIA - Admision Guardia pc izquierda"
+    },
+    {
+    "nombre": "HP0241",
+    "descripcion": "UCI 1 - ALA AISLADOS 1"
+    },
+    {
+    "nombre": "HP0238",
+    "descripcion": "UCI 1 - ALA NO AISLADOS 1"
+    },
+    {
+    "nombre": "HP0239",
+    "descripcion": "UCI 1 - ALA NO AISLADOS 2"
+    },
+    {
+    "nombre": "HP0242",
+    "descripcion": "UCI 1 - ALA AISLADOS 2"
+    },
+    {
+    "nombre": "HP0236",
+    "descripcion": "UCI 1 - Sala de Medicos - Izquierda"
+    },
+    {
+    "nombre": "HP0237",
+    "descripcion": "UCI 1 - Sala de Medicos - Derecha"
+    },
+    {
+    "nombre": "HP0243",
+    "descripcion": "UCI 1 - Jefatura - Dr. Jorge Ramacciotti"
+    },
+    {
+    "nombre": "HP0060",
+    "descripcion": "CONSULTORIO EXTERNO 11 - Salud Mental Puesto 1"
+    },
+    {
+    "nombre": "HP0090",
+    "descripcion": "LABORATORIO CENTRAL PB - Alejandra Medina"
+    },
+    {
+    "nombre": "HP0092",
+    "descripcion": "LABORATORIO CENTRAL PB - Valeria Olea"
+    },
+    {
+    "nombre": "HP0230",
+    "descripcion": "LABORATORIO CENTRAL PA -"
+    },
+    {
+    "nombre": "HP0148",
+    "descripcion": "COMPRAS - Karina Lobos"
+    },
+    {
+    "nombre": "HP0144",
+    "descripcion": "COMPRAS - Kalim Sardon"
+    },
+    {
+    "nombre": "HP0123",
+    "descripcion": "HIGIENE Y SEGURIDAD - Ana Lia Iaconianni"
+    },
+    {
+    "nombre": "HP0118",
+    "descripcion": "TESORERIA - Adriana San Pablo"
+    },
+    {
+    "nombre": "HP0321",
+    "descripcion": "DEPTO DE PLANIFICACION - Dra. Liliana Rubio"
+    },
+    {
+    "nombre": "HP0126",
+    "descripcion": "GERENCIA - Cra. Belen Tracanna"
+    },
+    {
+    "nombre": "HP0170",
+    "descripcion": "RRHH - Ruben Raitelli"
+    },
+    {
+    "nombre": "HP0117",
+    "descripcion": "TESORERIA - Sergio Rivadeneira"
+    },
+    {
+    "nombre": "HP0119",
+    "descripcion": "TESORERIA - Pilar Quesada"
+    },
+    {
+    "nombre": "HP0115",
+    "descripcion": "RENDICION DE CUENTAS"
+    },
+    {
+    "nombre": "HP0285",
+    "descripcion": "ARCHIVO - Jefatura"
+    },
+    {
+    "nombre": "HP0329",
+    "descripcion": "SALA 2 - Enfermeria"
+    },
+    {
+    "nombre": "HP0128",
+    "descripcion": "GERENCIA - Secretaria - Patricia Amdor"
+    },
+    {
+    "nombre": "HP0097",
+    "descripcion": "GUARDIA - Sala medicos de guardia PC 2"
+    },
+    {
+    "nombre": "HP0098",
+    "descripcion": "GUARDIA - Sala medicos de guardia PC 3"
+    },
+    {
+    "nombre": "HP0157",
+    "descripcion": "GUARDIA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0009",
+    "descripcion": "RESIDUOS PATOLOGICOS"
+    },
+    {
+    "nombre": "HP0347",
+    "descripcion": "QUIROFANO - Secretaria - Silvia Medina"
+    },
+    {
+    "nombre": "HP0346",
+    "descripcion": "QUIROFANO - Secretaria - Gerardo Castilla"
+    },
+    {
+    "nombre": "HP0010",
+    "descripcion": "SALA 11 - Sala de Medicos - Derecha"
+    },
+    {
+    "nombre": "HP0012",
+    "descripcion": "SALA 11 - Sala de Medicos - Izquierda"
+    },
+    {
+    "nombre": "HP0014",
+    "descripcion": "SALA 11 - Enfermeria"
+    },
+    {
+    "nombre": "HP0013",
+    "descripcion": "SALA 11 - Enfermeria"
+    },
+    {
+    "nombre": "HP0267",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 3"
+    },
+    {
+    "nombre": "HP0130",
+    "descripcion": "GERENCIA - SubGerencia - Cra. Veronica Alarcon"
+    },
+    {
+    "nombre": "HP0300",
+    "descripcion": "SALA 9 - Enfermeria de Sala"
+    },
+    {
+    "nombre": "HP0249",
+    "descripcion": "SALA 9 - Jefa Enfermeria"
+    },
+    {
+    "nombre": "HP0247",
+    "descripcion": "SALA 9 - PC Proyector"
+    },
+    {
+    "nombre": "HP0245",
+    "descripcion": "SALA 9 - Sala de Medicos - Izquierda"
+    },
+    {
+    "nombre": "HP0246",
+    "descripcion": "SALA 9 - Sala de Medicos - Derecha"
+    },
+    {
+    "nombre": "HP0093",
+    "descripcion": "LABORATORIO CENTRAL PB - Ana Arreguez"
+    },
+    {
+    "nombre": "HP0363",
+    "descripcion": "DEPTO DE PLANIFICACION - Cecilia Luna"
+    },
+    {
+    "nombre": "HP0028",
+    "descripcion": "ONCOLOGIA - Secretaria 2"
+    },
+    {
+    "nombre": "HP0133",
+    "descripcion": "DEPOSITO DE FARMACIA - Ana Bobba"
+    },
+    {
+    "nombre": "HP0089",
+    "descripcion": "INFECTOLOGIA - Farmacia programa VIH Yamile Arce"
+    },
+    {
+    "nombre": "HP0088",
+    "descripcion": "MAXILOFACIAL - Dr Hassan"
+    },
+    {
+    "nombre": "HP0049",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Residencia"
+    },
+    {
+    "nombre": "HP0308",
+    "descripcion": "SALA 7 - CARDIOLOGIA - ERGOMETRIA"
+    },
+    {
+    "nombre": "HP0143",
+    "descripcion": "FARMACIA CENTRAL - Andrea Burgos Turbay"
+    },
+    {
+    "nombre": "HP0035",
+    "descripcion": "INFECTOLOGIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0194",
+    "descripcion": "ESTADISTICAS - Puesto 2"
+    },
+    {
+    "nombre": "HP0197",
+    "descripcion": "ESTADISTICAS - Puesto 5"
+    },
+    {
+    "nombre": "HP0030",
+    "descripcion": "ONCOLOGIA - Enfermeria"
+    },
+    {
+    "nombre": "HP0135",
+    "descripcion": "DEPOSITO DE FARMACIA - Rodrigo Di Pinto"
+    },
+    {
+    "nombre": "HP0280",
+    "descripcion": "COMITE DE DOCENCIA  - Puesto 2"
+    },
+    {
+    "nombre": "HP0029",
+    "descripcion": "ONCOLOGIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0031",
+    "descripcion": "ONCOLOGIA - Consultorio 2"
+    },
+    {
+    "nombre": "HP0289",
+    "descripcion": "DISCAPACIDAD - Consultorio"
+    },
+    {
+    "nombre": "HP0262",
+    "descripcion": "GESTION PACIENTE - Jefatura -  Dra Paola Ingratta"
+    },
+    {
+    "nombre": "HP0190",
+    "descripcion": "SEC SECRETARIA - Jefa de Servicio - Stella Maris Herrera"
+    },
+    {
+    "nombre": "HP0261",
+    "descripcion": "GESTION PACIENTE - Secretaría - Luciana Orella"
+    },
+    {
+    "nombre": "HP0328",
+    "descripcion": "SERVICIO SOCIAL - Lic. Delia Rodriguez"
+    },
+    {
+    "nombre": "HP0294",
+    "descripcion": "DIRECCION - Administracion - Liliana Norry"
+    },
+    {
+    "nombre": "HP0327",
+    "descripcion": "SERVICIO SOCIAL - Lic. Lucia Lezcano"
+    },
+    {
+    "nombre": "HP0074",
+    "descripcion": "CONSULTORIO EXTERNO 23 - Traumatologia Enfermeria"
+    },
+    {
+    "nombre": "HP0226",
+    "descripcion": "LABORATORIO DE MICROBIOLOGIA - PC 2"
+    },
+    {
+    "nombre": "HP0225",
+    "descripcion": "LABORATORIO DE MICROBIOLOGIA - PC 1"
+    },
+    {
+    "nombre": "HP0377",
+    "descripcion": "UNIDAD DE TRASPLANTE RENAL - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0279",
+    "descripcion": "COMITE DE DOCENCIA  - Puesto 1"
+    },
+    {
+    "nombre": "HP0186",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Secretaria PC 2"
+    },
+    {
+    "nombre": "HP0342",
+    "descripcion": "SALA 3 - Reumatologia - Secretaria"
+    },
+    {
+    "nombre": "HP0319",
+    "descripcion": "SALA 3 - CLINICA MEDICA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0140",
+    "descripcion": "FARMACIA CENTRAL - Paola D´amato"
+    },
+    {
+    "nombre": "HP0065",
+    "descripcion": "CONSULTORIO EXTERNO 09 - Ginecologia Puesto 2"
+    },
+    {
+    "nombre": "HP0064",
+    "descripcion": "CONSULTORIO EXTERNO 09 - Ginecologia Puesto 1"
+    },
+    {
+    "nombre": "HP0048",
+    "descripcion": "CONSULTORIO EXTERNO 03 - ORL - Residencia"
+    },
+    {
+    "nombre": "HP0079",
+    "descripcion": "CONSULTORIO EXTERNO 26"
+    },
+    {
+    "nombre": "HP0364",
+    "descripcion": "SOPORTE NUTRICIONAL"
+    },
+    {
+    "nombre": "HP0057",
+    "descripcion": "CONSULTORIO EXTERNO 08 - Enfermeria Puesto 1"
+    },
+    {
+    "nombre": "HP0301",
+    "descripcion": "SALA 9 - Jefatura de Kinesiologia - Rodrigo Hamada"
+    },
+    {
+    "nombre": "HP0077",
+    "descripcion": "CONSULTORIO EXTERNO 24"
+    },
+    {
+    "nombre": "HP0161",
+    "descripcion": "NUTRICION - Lado de Oficina pc 1"
+    },
+    {
+    "nombre": "HP0334",
+    "descripcion": "CIRUGIA GENERAL - Secretaria - Mariela Figueroa Pajon"
+    },
+    {
+    "nombre": "HP0310",
+    "descripcion": "SALA 7 - CARDIOLOGIA - Holter"
+    },
+    {
+    "nombre": "HP0343",
+    "descripcion": "Sala 03 - Reumatologia - Sala de Medicos 1"
+    },
+    {
+    "nombre": "HP0083",
+    "descripcion": "CONSULTORIO EXTERNO 28 - Reumatologia - C 2"
+    },
+    {
+    "nombre": "HP0155",
+    "descripcion": "GUARDIA - Odontologia"
+    },
+    {
+    "nombre": "HP0201",
+    "descripcion": "PERSONAL - Yoel Ramasco"
+    },
+    {
+    "nombre": "HP0145",
+    "descripcion": "COMPRAS - Natalia Zato"
+    },
+    {
+    "nombre": "HP0127",
+    "descripcion": "AUDITORIA MEDICA - Dra Eugenia Albines"
+    },
+    {
+    "nombre": "HP0075",
+    "descripcion": "CONSULTORIO EXTERNO 23 - Traumatologia Puesto 1"
+    },
+    {
+    "nombre": "HP0076",
+    "descripcion": "CONSULTORIO EXTERNO 23 - Traumatologia Puesto 2"
+    },
+    {
+    "nombre": "HP0069",
+    "descripcion": "CONSULTORIO EXTERNO 23 - Traumatologia Puesto 3"
+    },
+    {
+    "nombre": "HP0042",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Puesto 2"
+    },
+    {
+    "nombre": "HP0370",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Ecografia 2"
+    },
+    {
+    "nombre": "HP0317",
+    "descripcion": "SALA 3 - SECRETARIA"
+    },
+    {
+    "nombre": "HP0164",
+    "descripcion": "HISOPADOS - Pc unica"
+    },
+    {
+    "nombre": "HP0084",
+    "descripcion": "CONSULTORIO EXTERNO 28 - Reumatologia - C 3"
+    },
+    {
+    "nombre": "HP0047",
+    "descripcion": "CONSULTORIO EXTERNO 03 - ORL - Puesto 2"
+    },
+    {
+    "nombre": "HP0259",
+    "descripcion": "RECUPERO DE COSTOS - Dip"
+    },
+    {
+    "nombre": "HP0072",
+    "descripcion": "TELESALUD - Consultorio 21"
+    },
+    {
+    "nombre": "HP0023",
+    "descripcion": "ANATOMIA PATOLOGICA - Area de Diagnostico"
+    },
+    {
+    "nombre": "HP0221",
+    "descripcion": "TRASPLANTE - Secretaria - Cecilia Marianela Gomez Isa"
+    },
+    {
+    "nombre": "HP0046",
+    "descripcion": "CONSULTORIO EXTERNO 03 - ORL - Puesto 1"
+    },
+    {
+    "nombre": "HP0228",
+    "descripcion": "LABORATORIO CENTRAL PA - Dra Marta Nanni"
+    },
+    {
+    "nombre": "HP0071",
+    "descripcion": "TELESALUD - Consultorio 20"
+    },
+    {
+    "nombre": "HP0122",
+    "descripcion": "GERENCIA - Secretaria -  Mariela Rosales"
+    },
+    {
+    "nombre": "HP0326",
+    "descripcion": "SERVICIO SOCIAL - Lic. Gorritti"
+    },
+    {
+    "nombre": "HP0154",
+    "descripcion": "GUARDIA - Triage"
+    },
+    {
+    "nombre": "HP0281",
+    "descripcion": "TELESTROKE - Consultorio 1"
+    },
+    {
+    "nombre": "HP0037",
+    "descripcion": "HEMOTERAPIA"
+    },
+    {
+    "nombre": "HP0260",
+    "descripcion": "GESTION PACIENTE - Secretaría - Cristina Fuerte"
+    },
+    {
+    "nombre": "HP0095",
+    "descripcion": "GUARDIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0058",
+    "descripcion": "CONSULTORIO EXTERNO 08 - Enfermeria Puesto 2"
+    },
+    {
+    "nombre": "HP0109",
+    "descripcion": "DEPTO DE ENFERMERIA - Puesto 2"
+    },
+    {
+    "nombre": "HP0361",
+    "descripcion": "QUIROFANO - Anestesiologia - Interno"
+    },
+    {
+    "nombre": "HP0362",
+    "descripcion": "QUIROFANO - Anestesiologia - Externa"
+    },
+    {
+    "nombre": "HP0120",
+    "descripcion": "TESORERIA - Cra. Angeles Vicente"
+    },
+    {
+    "nombre": "HP0094",
+    "descripcion": "LABORATORIO CENTRAL PB - Juan Rojas"
+    },
+    {
+    "nombre": "HP0376",
+    "descripcion": "UNIDAD DE TRASPLANTE RENAL - Secretaria"
+    },
+    {
+    "nombre": "HP0174",
+    "descripcion": "GUARDIA - Jefe Enfermeria Sanchez Miguel Mauro"
+    },
+    {
+    "nombre": "HP0016",
+    "descripcion": "SALA 11 - Secretaria"
+    },
+    {
+    "nombre": "HP0339",
+    "descripcion": "UCO - Secretario - Cristian Castilla"
+    },
+    {
+    "nombre": "HP0162",
+    "descripcion": "NUTRICION  - Frente Ventana Pc 2"
+    },
+    {
+    "nombre": "HP0216",
+    "descripcion": "CATA - Claudia Campos"
+    },
+    {
+    "nombre": "HP0141",
+    "descripcion": "FARMACIA CENTRAL - Griselda La Gatto"
+    },
+    {
+    "nombre": "HP0172",
+    "descripcion": "RRHH - Asuncion Lobo Frias Silva"
+    },
+    {
+    "nombre": "HP0306",
+    "descripcion": "SALA 7 - NEUMONOLOGIA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0039",
+    "descripcion": "SALA 10 - Residencia de Medicos"
+    },
+    {
+    "nombre": "HP0367",
+    "descripcion": "MULETO - EX VITREA"
+    },
+    {
+    "nombre": "HP0033",
+    "descripcion": "INFECTOLOGIA - Enfemerxs"
+    },
+    {
+    "nombre": "HP0085",
+    "descripcion": "LABORATORIO DE MICROBIOLOGIA- Secretaría - PB"
+    },
+    {
+    "nombre": "HP0191",
+    "descripcion": "SEC SECRETARIA - Secretaria"
+    },
+    {
+    "nombre": "HP0038",
+    "descripcion": "NEFROLOGIA - Consultorio"
+    },
+    {
+    "nombre": "HP0150",
+    "descripcion": "GUARDIA - Admision Guardia pc derecha"
+    },
+    {
+    "nombre": "HP0138",
+    "descripcion": "FARMACIA CENTRAL - Siliva Amate Perez"
+    },
+    {
+    "nombre": "HP0054",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Puesto 3 B"
+    },
+    {
+    "nombre": "HP0052",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Puesto 2"
+    },
+    {
+    "nombre": "HP0099",
+    "descripcion": "GUARDIA - Sala medicos de guardia PC 4"
+    },
+    {
+    "nombre": "HP0113",
+    "descripcion": "ASESORIA LETRADA"
+    },
+    {
+    "nombre": "HP0044",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Puesto 4"
+    },
+    {
+    "nombre": "HP0269",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 5"
+    },
+    {
+    "nombre": "HP0316",
+    "descripcion": "SALA 3 - ENFERMERIA"
+    },
+    {
+    "nombre": "HP0344",
+    "descripcion": "Sala 03 - Reumatologia - Sala de Medicos 2"
+    },
+    {
+    "nombre": "HP0131",
+    "descripcion": "GERENCIA - Gte - Cra. Veronica Alarcon"
+    },
+    {
+    "nombre": "HP0282",
+    "descripcion": "HEMODINAMIA - Sec. Julieta Palacios"
+    },
+    {
+    "nombre": "HP0320",
+    "descripcion": "SALA 3 - CLINICA MEDICA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0330",
+    "descripcion": "CIRUGIA GENERAL - Sala de Medicos - Izquierda"
+    },
+    {
+    "nombre": "HP0091",
+    "descripcion": "LABORATORIO CENTRAL PB - Hugo Sema"
+    },
+    {
+    "nombre": "HP0356",
+    "descripcion": "SALA 12 - Enfermeria Varones"
+    },
+    {
+    "nombre": "HP0277",
+    "descripcion": "UROLOGIA - Jefe Servicio"
+    },
+    {
+    "nombre": "HP0027",
+    "descripcion": "ONCOLOGIA - Secretaria 1"
+    },
+    {
+    "nombre": "HP0290",
+    "descripcion": "RAYOS - Secretaria"
+    },
+    {
+    "nombre": "HP0011",
+    "descripcion": "SALA 11 - Sala de Medicos - Centro"
+    },
+    {
+    "nombre": "HP0345",
+    "descripcion": "CALIDAD - Dra. Florencia Koch"
+    },
+    {
+    "nombre": "HP0193",
+    "descripcion": "ESTADISTICAS - Puesto 1"
+    },
+    {
+    "nombre": "HP0108",
+    "descripcion": "DEPTO DE ENFERMERIA - Secretaria"
+    },
+    {
+    "nombre": "HP0139",
+    "descripcion": "FARMACIA CENTRAL - Fanny Noemi Tejerina"
+    },
+    {
+    "nombre": "HP0196",
+    "descripcion": "DEPTO DE PLANIFICACION - Maria Paula Friaz"
+    },
+    {
+    "nombre": "HP0258",
+    "descripcion": "RECUPERO DE COSTOS - Andrea Juarez"
+    },
+    {
+    "nombre": "HP0005",
+    "descripcion": "BIOINGENIERIA - Jefatura"
+    },
+    {
+    "nombre": "HP0096",
+    "descripcion": "GUARDIA - Sala medicos de guardia PC 1"
+    },
+    {
+    "nombre": "HP0233",
+    "descripcion": "UCI 1 - Secretaria"
+    },
+    {
+    "nombre": "HP0146",
+    "descripcion": "COMPRAS - Mirta Soler"
+    },
+    {
+    "nombre": "HP0205",
+    "descripcion": "PERSONAL - Franco Guzman"
+    },
+    {
+    "nombre": "HP0372",
+    "descripcion": "HEMATOLOGIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0276",
+    "descripcion": "UROLOGIA - Enfermeria"
+    },
+    {
+    "nombre": "HP0350",
+    "descripcion": "CALIDAD - Seguridad de Pacientes"
+    },
+    {
+    "nombre": "HP0053",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Puesto 3 A"
+    },
+    {
+    "nombre": "HP0137",
+    "descripcion": "FARMACIA CENTRAL - Adriana Costas"
+    },
+    {
+    "nombre": "HP0293",
+    "descripcion": "CONSULTORIO EXTERNO 10 - Cirugia Vascular pc 2"
+    },
+    {
+    "nombre": "HP0102",
+    "descripcion": "SALA 10 - Residencia de Medicos"
+    },
+    {
+    "nombre": "HP0213",
+    "descripcion": "MESA DE ENTRADA - Liliana Diaz Pinilla"
+    },
+    {
+    "nombre": "HP0169",
+    "descripcion": "RRHH - Natalia Zato"
+    },
+    {
+    "nombre": "HP0291",
+    "descripcion": "SALA 8 - Enfermeria"
+    },
+    {
+    "nombre": "HP0004",
+    "descripcion": "INFORMATICA - Taller"
+    },
+    {
+    "nombre": "HP0171",
+    "descripcion": "RRHH - Esteban Ovejero"
+    },
+    {
+    "nombre": "HP0176",
+    "descripcion": "GUARDIA - Enfermeria Shockroom Pc 2"
+    },
+    {
+    "nombre": "HP0204",
+    "descripcion": "PERSONAL - Javier Lopez Lifona"
+    },
+    {
+    "nombre": "HP0177",
+    "descripcion": "GUARDIA - Enfermeria Shockroom Pc 3"
+    },
+    {
+    "nombre": "HP0032",
+    "descripcion": "INFECTOLOGIA - Jefatura"
+    },
+    {
+    "nombre": "HP0015",
+    "descripcion": "SALA 11 - Endoscopia"
+    },
+    {
+    "nombre": "HP0338",
+    "descripcion": "NEUROLOGIA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0173",
+    "descripcion": "DEPTO DE PLANIFICACION - Andrea Bruno"
+    },
+    {
+    "nombre": "HP0036",
+    "descripcion": "AFERESIS"
+    },
+    {
+    "nombre": "HP0202",
+    "descripcion": "PERSONAL - Susana Casavalle"
+    },
+    {
+    "nombre": "HP0312",
+    "descripcion": "SALA 7 - NEUMONOLOGIA - Secretaria"
+    },
+    {
+    "nombre": "HP0022",
+    "descripcion": "ANATOMIA PATOLOGICA - Jefatura - Marcela Ortiz Mayor"
+    },
+    {
+    "nombre": "HP0341",
+    "descripcion": "UCO - Enfermeria"
+    },
+    {
+    "nombre": "HP0125",
+    "descripcion": "RENDICION DE CUENTAS - Revisora"
+    },
+    {
+    "nombre": "HP0059",
+    "descripcion": "CONSULTORIO EXTERNO 10 - Cirugia"
+    },
+    {
+    "nombre": "HP0067",
+    "descripcion": "CONSULTORIO EXTERNO 16"
+    },
+    {
+    "nombre": "HP0056",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Puesto 4"
+    },
+    {
+    "nombre": "HP0055",
+    "descripcion": "ORIENTACION MEDICA - Pecera"
+    },
+    {
+    "nombre": "HP0078",
+    "descripcion": "CONSULTORIO EXTERNO 25"
+    },
+    {
+    "nombre": "HP0183",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Secretaria PC 1"
+    },
+    {
+    "nombre": "HP0264",
+    "descripcion": "GESTION PACIENTE - Claudia Sueldo"
+    },
+    {
+    "nombre": "HP0020",
+    "descripcion": "ANATOMIA PATOLOGICA - Secretaria - Fabiana Nuñez"
+    },
+    {
+    "nombre": "HP0134",
+    "descripcion": "DEPOSITO DE FARMACIA - Mariana Noemi Solorzano"
+    },
+    {
+    "nombre": "HP0275",
+    "descripcion": "ADMISION DE INTERNACION"
+    },
+    {
+    "nombre": "HP0355",
+    "descripcion": "SALA 12 - Residencia Puesto 2"
+    },
+    {
+    "nombre": "HP0354",
+    "descripcion": "SALA 12 - Residencia Puesto 1"
+    },
+    {
+    "nombre": "HP0357",
+    "descripcion": "SALA 12 - Secretaria Puesto 1"
+    },
+    {
+    "nombre": "HP0251",
+    "descripcion": "RECUPERO DE COSTOS - Dra Mabel Giarratana"
+    },
+    {
+    "nombre": "HP0223",
+    "descripcion": "TRASPLANTE - Psic. Cecilia Conti"
+    },
+    {
+    "nombre": "HP0068",
+    "descripcion": "CONSULTORIO EXTERNO 16"
+    },
+    {
+    "nombre": "HP0229",
+    "descripcion": "LABORATORIO CENTRAL PA - Hilda Mabel Campos"
+    },
+    {
+    "nombre": "HP0304",
+    "descripcion": "SALA 7 - Enfermeria - PC Derecha"
+    },
+    {
+    "nombre": "HP0349",
+    "descripcion": "QUIROFANO - Jefatura - Ramiro Bolea"
+    },
+    {
+    "nombre": "HP0034",
+    "descripcion": "INFECTOLOGIA - Secretaria - Ivana Carabajal"
+    },
+    {
+    "nombre": "HP0219",
+    "descripcion": "CATA - Juan Carlos Sade"
+    },
+    {
+    "nombre": "HP0073",
+    "descripcion": "MULETO"
+    },
+    {
+    "nombre": "HP0081",
+    "descripcion": "CONSULTORIO EXTERNO 28 - Secretaria Reumatologia"
+    },
+    {
+    "nombre": "HP0066",
+    "descripcion": "CONSULTORIO EXTERNO 12"
+    },
+    {
+    "nombre": "HP0203",
+    "descripcion": "PERSONAL - Salustiano Vergara"
+    },
+    {
+    "nombre": "HP0200",
+    "descripcion": "PERSONAL - Maximiliano Lopez"
+    },
+    {
+    "nombre": "HP0209",
+    "descripcion": "PERSONAL - Graciela Paperi"
+    },
+    {
+    "nombre": "HP0021",
+    "descripcion": "ANATOMIA PATOLOGICA - Secretaria - Itati Perez"
+    },
+    {
+    "nombre": "HP0110",
+    "descripcion": "DEPTO DE ENFERMERIA - Jefatura - Lic. Cevila"
+    },
+    {
+    "nombre": "HP0208",
+    "descripcion": "PERSONAL - Maria Jose Irastoza"
+    },
+    {
+    "nombre": "HP0248",
+    "descripcion": "SALA 9 - Jefatura"
+    },
+    {
+    "nombre": "HP0149",
+    "descripcion": "COMPRAS - Cra. Soledad Oleszuk"
+    },
+    {
+    "nombre": "HP0373",
+    "descripcion": "HEMATOLOGIA - Consultorio 2"
+    },
+    {
+    "nombre": "HP0359",
+    "descripcion": "SALA 12 - Enfermeria Mujeres"
+    },
+    {
+    "nombre": "HP0026",
+    "descripcion": "LABORATORIO DE HEMATOLOGIA - Laboratorio"
+    },
+    {
+    "nombre": "HP0025",
+    "descripcion": "LABORATORIO DE HEMATOLOGIA - Secretaria"
+    },
+    {
+    "nombre": "HP0051",
+    "descripcion": "CONSULTORIO EXTERNO 04 - Endocrinologia Puesto 1"
+    },
+    {
+    "nombre": "HP0121",
+    "descripcion": "PRENSA - Maria Medina"
+    },
+    {
+    "nombre": "HP0250",
+    "descripcion": "RECUPERO DE COSTOS - Dra Coca"
+    },
+    {
+    "nombre": "HP0100",
+    "descripcion": "SALA 10 - Residencia de Medicos - PC NUEVA"
+    },
+    {
+    "nombre": "HP0332",
+    "descripcion": "CIRUGIA GENERAL - Sala de Medicos - Central"
+    },
+    {
+    "nombre": "HP0082",
+    "descripcion": "CONSULTORIO EXTERNO 28 - Reumatologia - C 1"
+    },
+    {
+    "nombre": "HP0331",
+    "descripcion": "CIRUGIA GENERAL - Sala de Medicos - Derecha"
+    },
+    {
+    "nombre": "HP0192",
+    "descripcion": "SEGURIDAD E HIGIENE - Claudio Suarez"
+    },
+    {
+    "nombre": "HP0318",
+    "descripcion": "SALA 3 - CLINICA MEDICA - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0124",
+    "descripcion": "OBRAS - Arq. Marcela Mayorga"
+    },
+    {
+    "nombre": "HP0348",
+    "descripcion": "QUIROFANO - Secretaria - Daniel Moreira"
+    },
+    {
+    "nombre": "HP0305",
+    "descripcion": "SALA 7 - NEUMONOLOGIA - Ex Espirometria"
+    },
+    {
+    "nombre": "HP0307",
+    "descripcion": "SALA 7 - NEUMONOLOGIA - Espirometria"
+    },
+    {
+    "nombre": "HP0311",
+    "descripcion": "SALA 7 - CARDIOLOGIA - PC Derecha"
+    },
+    {
+    "nombre": "HP0136",
+    "descripcion": "FARMACIA CENTRAL - Silvia Gomez"
+    },
+    {
+    "nombre": "MULET01",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0252",
+    "descripcion": "RECUPERO DE COSTOS - Andres Rodriguez"
+    },
+    {
+    "nombre": "HP0366",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Jefe Servicio Tomografia"
+    },
+    {
+    "nombre": "HP0358",
+    "descripcion": "SALA 12 - Secretaria Puesto 2"
+    },
+    {
+    "nombre": "HP0063",
+    "descripcion": "CONSULTORIO EXTERNO 15"
+    },
+    {
+    "nombre": "HP0333",
+    "descripcion": "CIRUGIA GENERAL  - Jefatura - Dr Astudillo"
+    },
+    {
+    "nombre": "HP0045",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Oficina Jefe Servicio"
+    },
+    {
+    "nombre": "HP0224",
+    "descripcion": "TRASPLANTE - Cra. Mariela Lopez"
+    },
+    {
+    "nombre": "HP0195",
+    "descripcion": "ESTADISTICAS - Puesto 3 - Claudio Rojo"
+    },
+    {
+    "nombre": "HP0253",
+    "descripcion": "RECUPERO DE COSTOS - Belen Sandoval"
+    },
+    {
+    "nombre": "HP0296",
+    "descripcion": "DIRECCION - Secretaria - All in One - Matias Egea"
+    },
+    {
+    "nombre": "MULET02",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0365",
+    "descripcion": "FEBRILES - Admision"
+    },
+    {
+    "nombre": "HP0337",
+    "descripcion": "NEUROLOGIA - EEG"
+    },
+    {
+    "nombre": "HP0165",
+    "descripcion": "BANCO REGIONAL DE HUESOS  - Mariana Prado"
+    },
+    {
+    "nombre": "HP0265",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 1"
+    },
+    {
+    "nombre": "HP0041",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Puesto 1"
+    },
+    {
+    "nombre": "HP0212",
+    "descripcion": "PERSONAL - Luz Almiron"
+    },
+    {
+    "nombre": "HP0360",
+    "descripcion": "QUIROFANO - Recuperacion"
+    },
+    {
+    "nombre": "HP0163",
+    "descripcion": "MANTENIMIENTO - Jefe de Servicio Victor"
+    },
+    {
+    "nombre": "HP0286",
+    "descripcion": "ARCHIVO - Puesto 1"
+    },
+    {
+    "nombre": "HP0017",
+    "descripcion": "DERMATOLOGIA - Consultorio 2"
+    },
+    {
+    "nombre": "HP0335",
+    "descripcion": "CIRUGIA GENERAL - Secretaria - Maria Eugenia Diaz"
+    },
+    {
+    "nombre": "HP0351",
+    "descripcion": "RESIDENCIA ENFERMERIA - UCI1"
+    },
+    {
+    "nombre": "HP0227",
+    "descripcion": "LABORATORIO DE MICROBIOLOGIA - Secretario - Jorge Azar"
+    },
+    {
+    "nombre": "HP0263",
+    "descripcion": "GESTION PACIENTE - Lic. Noemi Navarro"
+    },
+    {
+    "nombre": "HP0283",
+    "descripcion": "HEMODINAMIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0001",
+    "descripcion": "INFORMATICA - Jefatura - Gerardo Andrade"
+    },
+    {
+    "nombre": "HP0019",
+    "descripcion": "DERMATOLOGIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0116",
+    "descripcion": "TESORERIA - Agostina Mistretta"
+    },
+    {
+    "nombre": "HP0040",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Transplante de Cornea"
+    },
+    {
+    "nombre": "HP0231",
+    "descripcion": "LABORATORIO CENTRAL PA -"
+    },
+    {
+    "nombre": "HP0303",
+    "descripcion": "SALA 7 - Enfermeria - PC Izquierda"
+    },
+    {
+    "nombre": "HP0215",
+    "descripcion": "MESA DE ENTRADA - Luciano Costilla"
+    },
+    {
+    "nombre": "HP0043",
+    "descripcion": "CONSULTORIO EXTERNO 02 - Puesto 3"
+    },
+    {
+    "nombre": "HP0156",
+    "descripcion": "GUARDIA - Consultorio 2"
+    },
+    {
+    "nombre": "HP0232",
+    "descripcion": "AUDITORIA MEDICA - Luis Hernan Acosta"
+    },
+    {
+    "nombre": "HP0166",
+    "descripcion": "BANCO REGIONAL DE HUESOS - Paola Nahuz"
+    },
+    {
+    "nombre": "HP0158",
+    "descripcion": "GUARDIA - Rodolfo Diaz Sal"
+    },
+    {
+    "nombre": "HP0175",
+    "descripcion": "GUARDIA - Enfermeria Shockroom Pc 1"
+    },
+    {
+    "nombre": "HP0274",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 10"
+    },
+    {
+    "nombre": "HP0061",
+    "descripcion": "CONSULTORIO EXTERNO 11 - Salud Mental Puesto 2"
+    },
+    {
+    "nombre": "HP0062",
+    "descripcion": "CONSULTORIO EXTERNO 11 - Salud Mental Puesto 3"
+    },
+    {
+    "nombre": "HP0087",
+    "descripcion": "MAXILOFACIAL - Consultorio 1"
+    },
+    {
+    "nombre": "HP0107",
+    "descripcion": "DEPTO DE ENFERMERIA - Luciano Pons"
+    },
+    {
+    "nombre": "HP0111",
+    "descripcion": "DEPTO DE ENFERMERIA - Lic. Veronica Jimenez"
+    },
+    {
+    "nombre": "MULETO",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0340",
+    "descripcion": "UCO - Sala de Medicos"
+    },
+    {
+    "nombre": "HP0112",
+    "descripcion": "DEPTO DE ENFERMERIA - Lic. Sergio Lopez"
+    },
+    {
+    "nombre": "HP0129",
+    "descripcion": "GERENCIA - Secretaria - Romina Barbero"
+    },
+    {
+    "nombre": "HP0178",
+    "descripcion": "GUARDIA - Enfermeria Shockroom Pc 4"
+    },
+    {
+    "nombre": "HP0179",
+    "descripcion": "GUARDIA - Enfermeria Shockroom Pc 5"
+    },
+    {
+    "nombre": "HP0180",
+    "descripcion": "GUARDIA - ShockRoom - Medicos"
+    },
+    {
+    "nombre": "HP0142",
+    "descripcion": "FARMACIA CENTRAL - Graciela Ramos"
+    },
+    {
+    "nombre": "HP0199",
+    "descripcion": "QUIROFANO - Farmacia"
+    },
+    {
+    "nombre": "HP0024",
+    "descripcion": "ANATOMIA PATOLOGICA - Notebook"
+    },
+    {
+    "nombre": "HP0147",
+    "descripcion": "COMPRAS - Lourdes Acuña"
+    },
+    {
+    "nombre": "HP0218",
+    "descripcion": "CATA - Bruno Gustavo Fernandez"
+    },
+    {
+    "nombre": "MULETOT1",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0220",
+    "descripcion": "TRASPLANTE - Dra. Moira Zunino"
+    },
+    {
+    "nombre": "HP0254",
+    "descripcion": "RECUPERO DE COSTOS - Carolina Garcia"
+    },
+    {
+    "nombre": "HP0132",
+    "descripcion": "DEPOSITO DE FARMACIA - Nury Pujol"
+    },
+    {
+    "nombre": "HP0240",
+    "descripcion": "UCI 1 - ALA NO AISLADOS 3"
+    },
+    {
+    "nombre": "HP0270",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 6"
+    },
+    {
+    "nombre": "HP0006",
+    "descripcion": "SUMINISTRO"
+    },
+    {
+    "nombre": "HP0185",
+    "descripcion": "UCI 2 - Sala de medicos Puesto 1"
+    },
+    {
+    "nombre": "HP0188",
+    "descripcion": "UCI 2 - Sala de medicos Puesto 4"
+    },
+    {
+    "nombre": "HP0160",
+    "descripcion": "LAVADERO"
+    },
+    {
+    "nombre": "HP0271",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 7"
+    },
+    {
+    "nombre": "HP0198",
+    "descripcion": "ONCOLOGIA - Jefe de Oncologia Dr Flores"
+    },
+    {
+    "nombre": "HP0272",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 8"
+    },
+    {
+    "nombre": "HP0273",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 9"
+    },
+    {
+    "nombre": "HP0278",
+    "descripcion": "UROLOGIA - Curaciones"
+    },
+    {
+    "nombre": "HP0302",
+    "descripcion": "UCI 1 - KINESIOLOGIA"
+    },
+    {
+    "nombre": "HP0181",
+    "descripcion": "ONCOLOGIA - Sala Medicos"
+    },
+    {
+    "nombre": "HP0287",
+    "descripcion": "ARCHIVO - Puesto 2"
+    },
+    {
+    "nombre": "HP0292",
+    "descripcion": "VACUNATORIO"
+    },
+    {
+    "nombre": "HP0297",
+    "descripcion": "DIRECCION - Secretaria - Pilar Novillo"
+    },
+    {
+    "nombre": "HP0298",
+    "descripcion": "DIRECCION - Sub Director - Dra Maria Jose Alascio"
+    },
+    {
+    "nombre": "HP0299",
+    "descripcion": "DIRECCION - Sub Director Tecnico - Lic. Marcelo Morales"
+    },
+    {
+    "nombre": "MULETORAYOS",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0314",
+    "descripcion": "RRHH - Oficina de Entrevistas"
+    },
+    {
+    "nombre": "HP0309",
+    "descripcion": "SALA 7 - CARDIOLOGIA - PC Izquierda"
+    },
+    {
+    "nombre": "HP0353",
+    "descripcion": "LABORATORIO DE GUARDIA - Puesto 2"
+    },
+    {
+    "nombre": "HP0324",
+    "descripcion": "SALUD MENTAL - Enfermeria"
+    },
+    {
+    "nombre": "HP0323",
+    "descripcion": "SALUD MENTAL - Consultorio 1"
+    },
+    {
+    "nombre": "HP0295",
+    "descripcion": "DIRECCION - Administracion - Marcela Nacir"
+    },
+    {
+    "nombre": "HP0325",
+    "descripcion": "SALA 7 - Clinica Medica"
+    },
+    {
+    "nombre": "HP0369",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Ecografia 1"
+    },
+    {
+    "nombre": "HP0336",
+    "descripcion": "SALA 5 - Enfemeria"
+    },
+    {
+    "nombre": "HP0018",
+    "descripcion": "DERMATOLOGIA - Enfermeria"
+    },
+    {
+    "nombre": "HP0378",
+    "descripcion": "PROCURACION - PC 1"
+    },
+    {
+    "nombre": "HP0375",
+    "descripcion": "UNIDAD DE TRASPLANTE RENAL - Consultorio"
+    },
+    {
+    "nombre": "HP0379",
+    "descripcion": "PROCURACION - PC 2"
+    },
+    {
+    "nombre": "HP0380",
+    "descripcion": "ESTERILIZACION - Jefatura"
+    },
+    {
+    "nombre": "HP0381",
+    "descripcion": "ESTERILIZACION - Ingreso de materiales"
+    },
+    {
+    "nombre": "HP0382",
+    "descripcion": "SALA 11 -  Jefatura - Dr. Rene Cazón"
+    },
+    {
+    "nombre": "HP0386",
+    "descripcion": "UCI 2 - Sala de Medicos puesto 2"
+    },
+    {
+    "nombre": "HP0387",
+    "descripcion": "UCI 2 - Sala de Medicos puesto 3"
+    },
+    {
+    "nombre": "HP0389",
+    "descripcion": "SALA 7 - Ecodopler"
+    },
+    {
+    "nombre": "HP0388",
+    "descripcion": "SALA 7 - Clinica Medica"
+    },
+    {
+    "nombre": "HP0391",
+    "descripcion": "HISOPADOS - PC 2"
+    },
+    {
+    "nombre": "HP0390",
+    "descripcion": "INFORMATICA - I&D - Gabriel Mendoza"
+    },
+    {
+    "nombre": "HP0392",
+    "descripcion": "ANATOMIA PATOLOGICA - Sala de Autopcias"
+    },
+    {
+    "nombre": "HP0399",
+    "descripcion": "QUIROFANO - Puesto 1"
+    },
+    {
+    "nombre": "HP0394",
+    "descripcion": "QUIROFANO - Puesto 5 - ADM FEBRILES 3"
+    },
+    {
+    "nombre": "HP0395",
+    "descripcion": "QUIROFANO - Puesto 3 - ADM FEBRILES 2"
+    },
+    {
+    "nombre": "HP0396",
+    "descripcion": "QUIROFANO - Puesto 4"
+    },
+    {
+    "nombre": "HP0393",
+    "descripcion": "CONSULTORIO EXTERNO 14"
+    },
+    {
+    "nombre": "HP0400",
+    "descripcion": "UCI 2 - Jefatura - Dr Alba"
+    },
+    {
+    "nombre": "HP0404",
+    "descripcion": "DIRECCION - Director Dr Enrique Valdecantos"
+    },
+    {
+    "nombre": "HP0397",
+    "descripcion": "FONOAUDIOLOGIA"
+    },
+    {
+    "nombre": "HP0206",
+    "descripcion": "PERSONAL - Adrian Lopez"
+    },
+    {
+    "nombre": "HP0207",
+    "descripcion": "PERSONAL -"
+    },
+    {
+    "nombre": "TRUENAS",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0182",
+    "descripcion": "GUARDIA - Farmacia"
+    },
+    {
+    "nombre": "HP0352",
+    "descripcion": "LABORATORIO DE GUARDIA - Puesto1"
+    },
+    {
+    "nombre": "MUL001",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0406",
+    "descripcion": "SALUD MENTAL -"
+    },
+    {
+    "nombre": "HP0401",
+    "descripcion": "UCI 2 -Enfermeria"
+    },
+    {
+    "nombre": "HP0222",
+    "descripcion": "TRASPLANTE - Dr Santiago Villavicencio"
+    },
+    {
+    "nombre": "HP0398",
+    "descripcion": "NEUROLOGIA - Consultorio"
+    },
+    {
+    "nombre": "HP0168",
+    "descripcion": "MANTENIMIENTO - Hernan Murillo"
+    },
+    {
+    "nombre": "HP0407",
+    "descripcion": "MEDICINA LABORAL"
+    },
+    {
+    "nombre": "HP0408",
+    "descripcion": "LABORATORIO CENTRAL ALTOS - Notebook asus corel i7"
+    },
+    {
+    "nombre": "HP0411",
+    "descripcion": "MEDICINA LABORAL - Lorena Antelo"
+    },
+    {
+    "nombre": "HP0409",
+    "descripcion": "NEFROLOGIA - Recidencia notebook bangho  corel i3"
+    },
+    {
+    "nombre": "HP0244",
+    "descripcion": "SALA 9 - Secretaria"
+    },
+    {
+    "nombre": "HP0266",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 2"
+    },
+    {
+    "nombre": "HP0410",
+    "descripcion": "UCI 2 - Ulsera por Presion - NO PROPIA"
+    },
+    {
+    "nombre": "HP0167",
+    "descripcion": "BANCO REGIONAL DE HUESOS - Nicolas"
+    },
+    {
+    "nombre": "HP0070",
+    "descripcion": "TELESALUD - Consultorio 19"
+    },
+    {
+    "nombre": "HP0413",
+    "descripcion": "RAYOS - ECOGRAFIA 3"
+    },
+    {
+    "nombre": "HP0414",
+    "descripcion": "UNIDAD DE SUEÑO -  Doctora coronel - COn 12"
+    },
+    {
+    "nombre": "HP0415",
+    "descripcion": "UCI 2 - Enfermeria (pecera)"
+    },
+    {
+    "nombre": "HP0416",
+    "descripcion": "ELECTROMIOGRAMA"
+    },
+    {
+    "nombre": "HP0417",
+    "descripcion": "COMITE DE DOCENCIA - Lic Nancy Medina"
+    },
+    {
+    "nombre": "HP0418",
+    "descripcion": "CONSULTORIO EXTERNO 03 - ORL - Secretaria"
+    },
+    {
+    "nombre": "HP0419",
+    "descripcion": "RECUPERO DE COSTOS - Cra. Reynaga"
+    },
+    {
+    "nombre": "HP0420",
+    "descripcion": "DEPTO DE PLANIFICACION - Epidemiologia -Walter Peña"
+    },
+    {
+    "nombre": "HP0421",
+    "descripcion": "INFORMATICA - Notebook"
+    },
+    {
+    "nombre": "HP0422",
+    "descripcion": "SALUD MENTAL - Secretaria - Pilar Guerra"
+    },
+    {
+    "nombre": "HP0423",
+    "descripcion": "CONSULTORIO EXTERNO 03 - ORL - Puesto 3"
+    },
+    {
+    "nombre": "HP0234",
+    "descripcion": "UCI 1 - Jefatura"
+    },
+    {
+    "nombre": "HP0426",
+    "descripcion": "RAYOS - Informes"
+    },
+    {
+    "nombre": "HP0425",
+    "descripcion": "DIAGNOSTICO POR IMAGEN - Informes"
+    },
+    {
+    "nombre": "HP0427",
+    "descripcion": "SALA 12 - NOTEBOOK - Residencia"
+    },
+    {
+    "nombre": "HP0428",
+    "descripcion": "CONSULTORIO EXTERNO 11 - Salud Mental"
+    },
+    {
+    "nombre": "HP0431",
+    "descripcion": "RRHH -"
+    },
+    {
+    "nombre": "HP0430",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0432",
+    "descripcion": "SALA 7 - Ergometria"
+    },
+    {
+    "nombre": "HP0433",
+    "descripcion": "UROLOGIA"
+    },
+    {
+    "nombre": "HP0434",
+    "descripcion": "BIOINGENIERIA - Taller"
+    },
+    {
+    "nombre": "HP0114",
+    "descripcion": "MULETO"
+    },
+    {
+    "nombre": "HP0435",
+    "descripcion": "NUTRICION - Belen Nofal"
+    },
+    {
+    "nombre": "HP0436",
+    "descripcion": "COMPRAS - Sofia"
+    },
+    {
+    "nombre": "HP0437",
+    "descripcion": "INFORMATICA - I&D - Gabriel Mendoza"
+    },
+    {
+    "nombre": "HP0438",
+    "descripcion": "SALA 9 - Kinesiologia - Sala de Tecnicos"
+    },
+    {
+    "nombre": "HP0439",
+    "descripcion": "CONSULTORIO EXTERNO - Odontologia"
+    },
+    {
+    "nombre": "HP0429",
+    "descripcion": "VITREA - MULETO"
+    },
+    {
+    "nombre": "HP0441",
+    "descripcion": "RRHH - Psico. Ana Carolina Nuova"
+    },
+    {
+    "nombre": "HP0442",
+    "descripcion": "RENDICION DE CUENTAS - Monica Chipolari"
+    },
+    {
+    "nombre": "HP0444",
+    "descripcion": "UCI 2 - Sector B - Enfemeria"
+    },
+    {
+    "nombre": "HP0445",
+    "descripcion": "UCI 2 - Sector B - Enfemeria 2"
+    },
+    {
+    "nombre": "HP0446",
+    "descripcion": "HEMATOLOGIA - Consultorio 1"
+    },
+    {
+    "nombre": "HP0447",
+    "descripcion": "SIN ASIGNAR"
+    },
+    {
+    "nombre": "HP0448",
+    "descripcion": "NEFROLOGIA - Guardia"
+    },
+    {
+    "nombre": "HP0450",
+    "descripcion": "FARMACIA CENTRAL - Kalim Sardon"
+    },
+    {
+    "nombre": "HP0451",
+    "descripcion": "CONSULTORIO EXTERNO - Neurologia"
+    },
+    {
+    "nombre": "HP0002",
+    "descripcion": "INFORMATICA - I&D - Saul Mendoza"
+    },
+    {
+    "nombre": "HP0268",
+    "descripcion": "GESTION PACIENTE - Admision - Puesto 4"
+    },
+    {
+    "nombre": "HP0184",
+    "descripcion": "IMAGENES - Residencia"
+    },
+    {
+    "nombre": "HP0440",
+    "descripcion": "CONSULTORIO EXTERNO - Odontologia"
+    },
+    {
+    "nombre": "HP0104",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0449",
+    "descripcion": "GESTION PACIENTE - Luciana Orella"
+    },
+    {
+    "nombre": "HP0452",
+    "descripcion": "SALA 10 - Enfermeria"
+    },
+    {
+    "nombre": "HP0453",
+    "descripcion": "GUARDIA - Salud Mental"
+    },
+    {
+    "nombre": "HP0454",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0443",
+    "descripcion": "UNIDAD DE SUEÑO - Sala"
+    },
+    {
+    "nombre": "HP0313",
+    "descripcion": null
+    },
+    {
+    "nombre": "HP0455",
+    "descripcion": "UNIDAD DE DOLOR"
+    }
+    ]

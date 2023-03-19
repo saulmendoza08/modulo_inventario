@@ -5,22 +5,22 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT");
 header("Access-Control-Allow-Headers: Content-Type");
 
-require_once '../../../model/connect.php';
+require_once '../../../../model/connect.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
   case 'GET':
-    getUsers($conn);
+    getCategories($conn);
     break;
   case 'POST':
-    addUser($conn);
+    addCategories($conn);
     break;
   case 'PUT':
-    updateUser($conn);
+    updateCategories($conn);
     break;
   case 'DELETE':
-    deleteUser($conn);
+    deleteCategories($conn);
     break;
   default:
     echo json_encode(['error' => 'Método no soportado']);
@@ -28,15 +28,15 @@ switch ($method) {
 }
   
 
-function getUsers($conn) {
+function getCategories($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios WHERE id = ?";
+    $sql = "SELECT id, nombre FROM categorias WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios";
+    $sql = "SELECT id, nombre FROM categorias";
     $stmt = $conn->prepare($sql);
   }
 
@@ -49,10 +49,7 @@ function getUsers($conn) {
     while ($row = $result->fetch_assoc()) {
       $usuarios[] = [
         'id' => $row['id'],
-        'nombre' => $row['nombre'],
-        'apellido' => $row['apellido'],
-        'correo' => $row['correo'],
-        'celular' => $row['celular']
+        'nombre' => $row['nombre']
       ];
     }
 
@@ -66,25 +63,22 @@ function getUsers($conn) {
 }
 
 
-function addUser($conn) {
+function addCategories($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['nombre'])) {
     $nombre = $data['nombre'];
-    $apellido = $data['apellido'];
-    $correo = $data['correo'];
-    $celular = $data['celular'];
 
-    $sql = "INSERT INTO usuarios (nombre, apellido, correo, celular) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO categorias (nombre) VALUES (?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("sssi", $nombre, $apellido, $correo, $celular);
+    $stmt->bind_param("s", $nombre);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario creado correctamente']);
+      echo json_encode(['success' => 'Categoria creada correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al crear usuario']);
+      echo json_encode(['error' => 'Error al crear categoria']);
     }
 
     $stmt->close();
@@ -96,19 +90,19 @@ function addUser($conn) {
 }
 
 
-function deleteUser($conn) {
+function deleteCategories($conn) {
   $id = $_GET['id'];
 
   if (!empty($id)) {
-    $sql = "DELETE FROM usuarios WHERE id = ?";
+    $sql = "DELETE FROM categorias WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario eliminado correctamente']);
+      echo json_encode(['success' => 'Categoria eliminada correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al eliminar usuario']);
+      echo json_encode(['error' => 'Error al eliminar categoria']);
     }
 
     $stmt->close();
@@ -120,26 +114,23 @@ function deleteUser($conn) {
 }
 
 
-function updateUser($conn) {
+function updateCategories($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['id']) && !empty($data['nombre'])) {
       $id = $data['id'];
       $nombre = $data['nombre'];
-      $apellido = $data['apellido'];
-      $correo = $data['correo'];
-      $celular = $data['celular'];
 
-      $sql = "UPDATE usuarios SET nombre = ?, apellido = ?, correo = ?, celular = ?  WHERE id = ?";
+      $sql = "UPDATE categorias SET nombre = ?  WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sssii", $nombre, $apellido, $correo, $celular, $id);
+      $stmt->bind_param("si", $nombre, $id);
 
       if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario actualizado correctamente']);
+      echo json_encode(['success' => 'Categoria actualizada correctamente']);
       } else {
-      echo json_encode(['error' => 'Error al actualizar usuario']);
+      echo json_encode(['error' => 'Error al actualizar Categoria']);
       }
 
       $stmt->close();

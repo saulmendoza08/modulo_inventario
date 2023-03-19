@@ -32,11 +32,11 @@ function getUsers($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios WHERE id = ?";
+    $sql = "SELECT id, nombre, apellido, correo, celular, estado FROM usuarios WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios";
+    $sql = "SELECT id, nombre, apellido, correo, celular, estado FROM usuarios";
     $stmt = $conn->prepare($sql);
   }
 
@@ -52,7 +52,8 @@ function getUsers($conn) {
         'nombre' => $row['nombre'],
         'apellido' => $row['apellido'],
         'correo' => $row['correo'],
-        'celular' => $row['celular']
+        'celular' => $row['celular'],
+        'estado' => $row['estado']
       ];
     }
 
@@ -75,11 +76,12 @@ function addUser($conn) {
     $apellido = $data['apellido'];
     $correo = $data['correo'];
     $celular = $data['celular'];
+    $estado = "activo";
 
-    $sql = "INSERT INTO usuarios (nombre, apellido, correo, celular) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (nombre, apellido, correo, celular, estado) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("sssi", $nombre, $apellido, $correo, $celular);
+    $stmt->bind_param("sssis", $nombre, $apellido, $correo, $celular, $estado);
 
     if ($stmt->execute()) {
       echo json_encode(['success' => 'Usuario creado correctamente']);
@@ -124,17 +126,18 @@ function updateUser($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular']) && !empty($data['estado'])) {
       $id = $data['id'];
       $nombre = $data['nombre'];
       $apellido = $data['apellido'];
       $correo = $data['correo'];
       $celular = $data['celular'];
+      $estado = $data['estado'];
 
-      $sql = "UPDATE usuarios SET nombre = ?, apellido = ?, correo = ?, celular = ?  WHERE id = ?";
+      $sql = "UPDATE usuarios SET nombre = ?, apellido = ?, correo = ?, celular = ?, estado = ? WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sssii", $nombre, $apellido, $correo, $celular, $id);
+      $stmt->bind_param("sssisi", $nombre, $apellido, $correo, $celular, $estado, $id);
 
       if ($stmt->execute()) {
       echo json_encode(['success' => 'Usuario actualizado correctamente']);

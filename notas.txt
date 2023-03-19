@@ -1,0 +1,15 @@
+ya
+
+equipos *api
+servicios *api
+usuarios *api
+
+
+falta
+
+inventario
+	categorias *db *api
+	marcas *db
+	proveedores *db
+	solicitudes 
+	productos
