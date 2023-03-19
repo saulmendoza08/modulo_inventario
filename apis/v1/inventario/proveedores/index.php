@@ -5,22 +5,22 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT");
 header("Access-Control-Allow-Headers: Content-Type");
 
-require_once '../../../model/connect.php';
+require_once '../../../../model/connect.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
   case 'GET':
-    getUsers($conn);
+    getProveedores($conn);
     break;
   case 'POST':
-    addUser($conn);
+    addProveedores($conn);
     break;
   case 'PUT':
-    updateUser($conn);
+    updateProveedores($conn);
     break;
   case 'DELETE':
-    deleteUser($conn);
+    deleteProveedores($conn);
     break;
   default:
     echo json_encode(['error' => 'Método no soportado']);
@@ -28,15 +28,15 @@ switch ($method) {
 }
   
 
-function getUsers($conn) {
+function getProveedores($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios WHERE id = ?";
+    $sql = "SELECT id, nombre, cuit, domicilio, celular FROM proveedores WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios";
+    $sql = "SELECT id, nombre, cuit, domicilio, celular FROM proveedores";
     $stmt = $conn->prepare($sql);
   }
 
@@ -50,8 +50,8 @@ function getUsers($conn) {
       $usuarios[] = [
         'id' => $row['id'],
         'nombre' => $row['nombre'],
-        'apellido' => $row['apellido'],
-        'correo' => $row['correo'],
+        'cuit' => $row['cuit'],
+        'domicilio' => $row['domicilio'],
         'celular' => $row['celular']
       ];
     }
@@ -66,25 +66,25 @@ function getUsers($conn) {
 }
 
 
-function addUser($conn) {
+function addProveedores($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['nombre']) && !empty($data['cuit']) && !empty($data['domicilio']) && !empty($data['celular'])) {
     $nombre = $data['nombre'];
-    $apellido = $data['apellido'];
-    $correo = $data['correo'];
+    $apellido = $data['cuit'];
+    $domicilio = $data['domicilio'];
     $celular = $data['celular'];
 
-    $sql = "INSERT INTO usuarios (nombre, apellido, correo, celular) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (nombre, cuit, domicilio, celular) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("sssi", $nombre, $apellido, $correo, $celular);
+    $stmt->bind_param("sssi", $nombre, $apellido, $domicilio, $celular);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario creado correctamente']);
+      echo json_encode(['success' => 'Proveedor creado correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al crear usuario']);
+      echo json_encode(['error' => 'Error al crear proveedor']);
     }
 
     $stmt->close();
@@ -96,19 +96,19 @@ function addUser($conn) {
 }
 
 
-function deleteUser($conn) {
+function deleteProveedores($conn) {
   $id = $_GET['id'];
 
   if (!empty($id)) {
-    $sql = "DELETE FROM usuarios WHERE id = ?";
+    $sql = "DELETE FROM proveedores WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario eliminado correctamente']);
+      echo json_encode(['success' => 'Proveedor eliminado correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al eliminar usuario']);
+      echo json_encode(['error' => 'Error al eliminar Proveedor']);
     }
 
     $stmt->close();
@@ -120,26 +120,26 @@ function deleteUser($conn) {
 }
 
 
-function updateUser($conn) {
+function updateProveedores($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['domicilio']) && !empty($data['cuit']) && !empty($data['celular'])) {
       $id = $data['id'];
       $nombre = $data['nombre'];
-      $apellido = $data['apellido'];
-      $correo = $data['correo'];
+      $domicilio = $data['domicilio'];
+      $cuit = $data['cuit'];
       $celular = $data['celular'];
 
-      $sql = "UPDATE usuarios SET nombre = ?, apellido = ?, correo = ?, celular = ?  WHERE id = ?";
+      $sql = "UPDATE usuarios SET nombre = ?, cuit = ?, docimicilio = ?, celular = ?  WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sssii", $nombre, $apellido, $correo, $celular, $id);
+      $stmt->bind_param("sssii", $nombre, $cuit, $domicilio, $celular, $id);
 
       if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario actualizado correctamente']);
+      echo json_encode(['success' => 'Proveedor actualizado correctamente']);
       } else {
-      echo json_encode(['error' => 'Error al actualizar usuario']);
+      echo json_encode(['error' => 'Error al actualizar Proveedor']);
       }
 
       $stmt->close();
