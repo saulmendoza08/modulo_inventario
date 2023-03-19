@@ -6,9 +6,12 @@ usuarios *api
 categorias *db *api
 marcas *db *api
 proveedores *db *api
+productos *db *api
+solicitudes *db *api
+
+
 
 falta
 
 inventario
-	solicitudes 
-	productos
+	

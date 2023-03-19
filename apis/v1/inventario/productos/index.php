@@ -5,22 +5,22 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT");
 header("Access-Control-Allow-Headers: Content-Type");
 
-require_once '../../../model/connect.php';
+require_once '../../../../model/connect.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
   case 'GET':
-    getUsers($conn);
+    getproductos($conn);
     break;
   case 'POST':
-    addUser($conn);
+    addproducto($conn);
     break;
   case 'PUT':
-    updateUser($conn);
+    updateproducto($conn);
     break;
   case 'DELETE':
-    deleteUser($conn);
+    deleteproducto($conn);
     break;
   default:
     echo json_encode(['error' => 'Método no soportado']);
@@ -28,15 +28,15 @@ switch ($method) {
 }
   
 
-function getUsers($conn) {
+function getproductos($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios WHERE id = ?";
+    $sql = "SELECT id, id_categorias, id_marcas, descripcion FROM productos WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, nombre, apellido, correo, celular FROM usuarios";
+    $sql = "SELECT id, id_categorias, id_marcas, descripcion FROM productos";
     $stmt = $conn->prepare($sql);
   }
 
@@ -44,19 +44,18 @@ function getUsers($conn) {
   $result = $stmt->get_result();
 
   if ($result->num_rows > 0) {
-    $usuarios = [];
+    $productos = [];
 
     while ($row = $result->fetch_assoc()) {
-      $usuarios[] = [
+      $productos[] = [
         'id' => $row['id'],
-        'nombre' => $row['nombre'],
-        'apellido' => $row['apellido'],
-        'correo' => $row['correo'],
-        'celular' => $row['celular']
+        'id_categorias' => $row['id_categorias'],
+        'id_marcas' => $row['id_marcas'],
+        'descripcion' => $row['descripcion']
       ];
     }
 
-    echo json_encode($usuarios);
+    echo json_encode($productos);
   } else {
     echo json_encode([]);
   }
@@ -66,25 +65,25 @@ function getUsers($conn) {
 }
 
 
-function addUser($conn) {
+function addproducto($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
-    $nombre = $data['nombre'];
-    $apellido = $data['apellido'];
-    $correo = $data['correo'];
-    $celular = $data['celular'];
+  if (!empty($data['id']) && !empty($data['id_categorias']) && !empty($data['id_marcas']) && !empty($data['descripcion']) ) {
+    $id = $data['id'];
+    $id_categorias = $data['id_categorias'];
+    $id_marcas = $data['id_marcas'];
+    $descripcion = $data['descripcion'];
 
-    $sql = "INSERT INTO usuarios (nombre, apellido, correo, celular) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO productos (id, id_categorias, id_marcas, descripcion) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("sssi", $nombre, $apellido, $correo, $celular);
+    $stmt->bind_param("iiis", $id, $id_categorias, $id_marcas, $descripcion);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario creado correctamente']);
+      echo json_encode(['success' => 'producto creado correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al crear usuario']);
+      echo json_encode(['error' => 'Error al crear producto']);
     }
 
     $stmt->close();
@@ -96,19 +95,19 @@ function addUser($conn) {
 }
 
 
-function deleteUser($conn) {
+function deleteproducto($conn) {
   $id = $_GET['id'];
 
   if (!empty($id)) {
-    $sql = "DELETE FROM usuarios WHERE id = ?";
+    $sql = "DELETE FROM productos WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario eliminado correctamente']);
+      echo json_encode(['success' => 'Productos eliminado correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al eliminar usuario']);
+      echo json_encode(['error' => 'Error al eliminar Productos']);
     }
 
     $stmt->close();
@@ -120,26 +119,25 @@ function deleteUser($conn) {
 }
 
 
-function updateUser($conn) {
+function updateproducto($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['apellido']) && !empty($data['correo']) && !empty($data['celular'])) {
+  if (!empty($data['id']) && !empty($data['id_categorias']) && !empty($data['id_marcas']) && !empty($data['descripcion'])) {
       $id = $data['id'];
-      $nombre = $data['nombre'];
-      $apellido = $data['apellido'];
-      $correo = $data['correo'];
-      $celular = $data['celular'];
+      $id_categorias = $data['id_categorias'];
+      $id_marcas = $data['id_marcas'];
+      $descripcion = $data['descripcion'];
 
-      $sql = "UPDATE usuarios SET nombre = ?, apellido = ?, correo = ?, celular = ?  WHERE id = ?";
+      $sql = "UPDATE productos SET id_categorias = ?, id_marcas = ?, descripcion = ?  WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sssii", $nombre, $apellido, $correo, $celular, $id);
+      $stmt->bind_param("iisi", $id_categorias, $id_marcas, $descripcion, $id);
 
       if ($stmt->execute()) {
-      echo json_encode(['success' => 'Usuario actualizado correctamente']);
+      echo json_encode(['success' => 'Producto actualizado correctamente']);
       } else {
-      echo json_encode(['error' => 'Error al actualizar usuario']);
+      echo json_encode(['error' => 'Error al actualizar Producto']);
       }
 
       $stmt->close();
