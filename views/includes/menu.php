@@ -17,8 +17,8 @@
                 </div>
             </li>
             <li><a href="#"><i class="zmdi zmdi-home"></i><span>Inventario</span></a></li>
-            <li><a href="#"><i class="zmdi zmdi-home"></i><span>Equipos</span></a></li>
-            <li><a href="#"><i class="zmdi zmdi-home"></i><span>Servicios</span></a></li>
+            <li><a href="../views/equipos.php"><i class="zmdi zmdi-home"></i><span>Equipos</span></a></li>
+            <li><a href="../views/servicios.php"><i class="zmdi zmdi-home"></i><span>Servicios</span></a></li>
             <li><a href="../views/categorias.php"><i class="zmdi zmdi-home"></i><span>Categorias</span></a></li>
             <li><a href="../views/marcas.php"><i class="zmdi zmdi-home"></i><span>Marcas</span></a></li>
             <li><a href="../views/productos.php"><i class="zmdi zmdi-home"></i><span>Productos</span></a></li>
