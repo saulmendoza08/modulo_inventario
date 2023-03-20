@@ -15,3 +15,13 @@ falta
 
 inventario
 	
+----
+
+
+tablas 
+
+categorias*
+marcas*
+productos*
+proveedores*
+solicitudes*
