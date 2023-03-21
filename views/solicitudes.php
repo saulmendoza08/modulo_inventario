@@ -36,8 +36,8 @@
                                             <th>Detalle del bien</th>
                                             <th>Fecha Solicitud</th>
                                             <th>Ticket</th>
-                                            <th>Id servicio</th>
-                                            <th>Id estado</th>
+                                            <th>Servicio</th>
+                                            <th>Estado</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -47,8 +47,8 @@
                                             <th>Detalle del bien</th>
                                             <th>Fecha Solicitud</th>
                                             <th>Ticket</th>
-                                            <th>Id servicio</th>
-                                            <th>Id estado</th>
+                                            <th>Servicio</th>
+                                            <th>Estado</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

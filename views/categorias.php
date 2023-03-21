@@ -28,7 +28,7 @@
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable" id = "tabla-categorias">
+                                <table class="table table-bordered table-striped table-hover" id = "tabla-categorias">
                                     <thead>
                                         <tr>
                                             <th>Id</th>
@@ -42,7 +42,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                       <?php tbody_categorias();?>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -55,6 +55,8 @@
     </div>
 </section>
 
-<!-- <script src="./js/categorias.js"></script> -->
-<?php require_once ('../views/includes/footer.php');?>
 
+
+<?php require_once ('../views/includes/footer.php');?>
+<script src="../assets/js/jquery.dataTables.js"></script>
+<script src="./js/categorias.js"></script>

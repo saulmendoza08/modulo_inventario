@@ -4,7 +4,7 @@ fetch('../apis/v1/inventario/categorias')
   .then(data => {
     // Obtener la tabla por su ID
     const tabla = document.getElementById('tabla-categorias');
-    
+        
     // Obtener la referencia al tbody de la tabla
     let tbody = document.getElementById("tabla-categorias").getElementsByTagName("tbody")[0];
     // Establecer el contenido HTML del tbody a una cadena vacía
@@ -24,4 +24,5 @@ fetch('../apis/v1/inventario/categorias')
       // Agregar la fila a la tabla
       tabla.querySelector('tbody').appendChild(fila);
     });
+    let table = new DataTable('#tabla-categorias');
   });
