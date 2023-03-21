@@ -7,7 +7,7 @@
 <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
 
 <title>Modulo inventario</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="../assets/images_user/logo.png" type="image/x-icon">
 <!-- Favicon-->
 <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
 <!-- JQuery DataTable Css -->
