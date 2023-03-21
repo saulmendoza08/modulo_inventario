@@ -31,32 +31,28 @@
                                 <table class="table table-bordered table-striped table-hover dataTable js-exportable" id = "tabla-solicitudes">
                                     <thead>
                                         <tr>
-                                            <th>Id</th>
+                                            <th>Nro Sol</th>
+                                            <th>Codigo del Bien</th>
+                                            <th>Detalle del bien</th>
                                             <th>Fecha Solicitud</th>
                                             <th>Ticket</th>
-                                            <th>Oc</th>
-                                            <th>Fecha recepcion</th>
-                                            <th>Remito</th>
                                             <th>Id servicio</th>
-                                            <th>Pc</th>
                                             <th>Id estado</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Id</th>
+                                            <th>Nro Sol</th>
+                                            <th>Codigo del Bien</th>
+                                            <th>Detalle del bien</th>
                                             <th>Fecha Solicitud</th>
                                             <th>Ticket</th>
-                                            <th>Oc</th>
-                                            <th>Fecha recepcion</th>
-                                            <th>Remito</th>
                                             <th>Id servicio</th>
-                                            <th>Pc</th>
                                             <th>Id estado</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php tbody_solicitudes();?>
+                                        <?php //tbody_solicitudes();?>
                                     </tbody>
                                 </table>
                             </div>
