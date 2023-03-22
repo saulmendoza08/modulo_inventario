@@ -36,13 +36,13 @@
                                             <th>Detalle del bien</th>
                                             <th>Cantidad Sol.</th>
                                             <th>Cantidad recib.</th>
+                                            <th>Fecha Sol.</th>
+                                            <th>Ticket</th>
+                                            <th>Remito</th>
+                                            <th>Oc</th>
+                                            <th>Fecha recepcion</th>
+                                            <th>Pc</th>
                                             <th>Servicio</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
                                             <th>Estado</th>
                                         </tr>
                                     </thead>
@@ -51,15 +51,15 @@
                                             <th>Nro Sol</th>
                                             <th>Codigo del Bien</th>
                                             <th>Detalle del bien</th>
-                                            <th>Fecha Solicitud</th>
+                                            <th>Cantidad Sol.</th>
+                                            <th>Cantidad recib.</th>
+                                            <th>Fecha Sol.</th>
                                             <th>Ticket</th>
+                                            <th>Remito</th>
+                                            <th>Oc</th>
+                                            <th>Fecha recepcion</th>
+                                            <th>Pc</th>
                                             <th>Servicio</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
-                                            <th>Estado</th>
                                             <th>Estado</th>
                                         </tr>
                                     </tfoot>
