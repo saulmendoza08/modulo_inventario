@@ -12,7 +12,7 @@
                         <li class="breadcrumb-item"><a href=""><i class="zmdi zmdi-home"></i>Inventario</a></li>
                         <li class="breadcrumb-item"><a href="">Solicitudes</a></li>
                     </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button">sss<i class="zmdi zmdi-sort-amount-desc"></i></button>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
             </div>
         </div>
@@ -34,9 +34,15 @@
                                             <th>Nro Sol</th>
                                             <th>Codigo del Bien</th>
                                             <th>Detalle del bien</th>
-                                            <th>Fecha Solicitud</th>
-                                            <th>Ticket</th>
+                                            <th>Cantidad Sol.</th>
+                                            <th>Cantidad recib.</th>
                                             <th>Servicio</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
                                             <th>Estado</th>
                                         </tr>
                                     </thead>
@@ -49,10 +55,16 @@
                                             <th>Ticket</th>
                                             <th>Servicio</th>
                                             <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
+                                            <th>Estado</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php //tbody_solicitudes();?>
+                                        <?php tbody_solicitudes();?>
                                     </tbody>
                                 </table>
                             </div>
