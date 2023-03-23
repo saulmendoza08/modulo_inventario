@@ -56,5 +56,5 @@
 </section>
 
 <?php require_once ('../views/includes/footer.php');?>
-<script src="./js/solicitudes.js"></script>
+<script src="./js/equipos.js"></script>
 

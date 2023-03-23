@@ -1,6 +1,6 @@
 $(function () {
 
-  fetch('../apis/v1/equipos')
+  fetch('../apis/v1/equipos/equipos.json')
   .then(response => response.json())
   .then(data => {
     // Obtener la tabla por su ID
@@ -18,19 +18,8 @@ $(function () {
 
       // Agregar las celdas con los datos del producto
       fila.innerHTML = `
-        <td>${producto.nro_sol}</td>
-        <td>${producto.cod_producto}</td>
-        <td>${producto.descripcion_prod}</td>
-        <td>${producto.cantidad_sol}</td>
-        <td>${producto.cantidad_recibida}</td>
-        <td>${producto.fecha_sol}</td>
-        <td>${producto.ticket}</td>
-        <td>${producto.remito}</td>
-        <td>${producto.oc}</td>
-        <td>${producto.fecha_recepcion}</td>
-        <td>${producto.pc}</td>
-        <td>${producto.servicio}</td>
-        <td>${producto.estado}</td>
+        <td>${producto.nombre}</td>
+        <td>${producto.descripcion}</td>
       `;
 
       // Agregar la fila a la tabla
