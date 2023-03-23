@@ -1,6 +1,6 @@
 $(function () {
 
-  fetch('../apis/v1/equipos/equipos.json')
+  fetch('../apis/v1/equipos')
   .then(response => response.json())
   .then(data => {
     // Obtener la tabla por su ID
@@ -47,5 +47,5 @@ $(function () {
         ],
     });
   });
-  
+    
 });

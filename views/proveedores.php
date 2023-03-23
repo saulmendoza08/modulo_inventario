@@ -48,7 +48,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php tbody_proveedores();?>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -61,6 +61,6 @@
     </div>
 </section>
 
-<!-- <script src="./js/proveedores.js"></script> -->
 <?php require_once ('../views/includes/footer.php');?>
+<script src="./js/proveedores.js"></script>
 

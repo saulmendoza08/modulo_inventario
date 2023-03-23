@@ -46,7 +46,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php tbody_productos();?>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -59,6 +59,6 @@
     </div>
 </section>
 
-<!-- <script src="./js/productos.js"></script> -->
 <?php require_once ('../views/includes/footer.php');?>
+<script src="./js/productos.js"></script>
 

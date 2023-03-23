@@ -12,7 +12,7 @@
                         <li class="breadcrumb-item"><a href=""><i class="zmdi zmdi-home"></i>Inventario</a></li>
                         <li class="breadcrumb-item"><a href="">Marcas</a></li>
                     </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button">sss<i class="zmdi zmdi-sort-amount-desc"></i></button>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php tbody_marcas();?>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -57,6 +57,7 @@
     </div>
 </section>
 
-<!-- <script src="./js/marcas.js"></script> -->
 <?php require_once ('../views/includes/footer.php');?>
+<script src="./js/marcas.js"></script>
+
 

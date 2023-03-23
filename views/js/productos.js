@@ -23,7 +23,19 @@ fetch('../apis/v1/inventario/productos')
         <td>${producto.descripcion}</td>
       `;
 
-      // Agregar la fila a la tabla
-      tabla.querySelector('tbody').appendChild(fila);
-    });
+
+    // Agregar la fila a la tabla
+    tabla.querySelector('tbody').appendChild(fila);
   });
+
+  $('.js-basic-example').DataTable();
+  
+  //Exportable table
+  $('.js-exportable').DataTable({
+      dom: 'Bfrtip',
+      buttons: [
+          'copy', 'csv', 'excel', 'pdf', 'print'
+      ],
+  });
+});
+  
