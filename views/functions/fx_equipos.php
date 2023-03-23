@@ -2,8 +2,8 @@
 
 function tbody_equipos(){
     // Define la ruta relativa de la API
-    //$url = 'http://localhost/modulo_inventario/apis/v1/equipos';
-    $url = 'http://localhost/modulo_inventario/apis/v1/equipos/equipos.json';
+    $url = 'http://localhost/modulo_inventario/apis/v1/equipos';
+    //$url = 'http://localhost/modulo_inventario/apis/v1/equipos/equipos.json';
 
     // Obtiene los datos de la API
     $data = file_get_contents($url);

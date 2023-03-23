@@ -10,7 +10,7 @@
                 <div class="col-lg-7 col-md-6 col-sm-12">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href=""><i class="zmdi zmdi-home"></i>Inventario</a></li>
-                        <li class="breadcrumb-item"><a href="">Categorias</a></li>
+                        <li class="breadcrumb-item"><a href="">Equipos</a></li>
                     </ul>
                     <button class="btn btn-primary btn-icon mobile_menu" type="button">sss<i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
@@ -24,7 +24,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="header">
-                            <h2><strong>Tabla</strong> de Categorias</h2>
+                            <h2><strong>Tabla</strong> de Equipos</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -42,7 +42,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php tbody_categorias();?>
+
                                     </tbody>
                                 </table>
                             </div>
@@ -58,5 +58,4 @@
 
 
 <?php require_once ('../views/includes/footer.php');?>
-<!-- <script src="../assets/js/jquery.dataTables.js"></script> -->
-<!-- <script src="./js/categorias.js"></script> -->
+<script src="./js/categorias.js"></script>

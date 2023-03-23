@@ -1,3 +1,6 @@
+$(function () {
+
+
 // Obtener los datos de la API
 fetch('../apis/v1/inventario/categorias')
   .then(response => response.json())
@@ -21,8 +24,21 @@ fetch('../apis/v1/inventario/categorias')
         <td>${producto.nombre}</td>
       `;
 
-      // Agregar la fila a la tabla
-      tabla.querySelector('tbody').appendChild(fila);
-    });
-    let table = new DataTable('#tabla-categorias');
+
+    // Agregar la fila a la tabla
+    tabla.querySelector('tbody').appendChild(fila);
   });
+
+  $('.js-basic-example').DataTable();
+  
+  //Exportable table
+  $('.js-exportable').DataTable({
+      dom: 'Bfrtip',
+      buttons: [
+          'copy', 'csv', 'excel', 'pdf', 'print'
+      ],
+  });
+});
+  
+});
+  
