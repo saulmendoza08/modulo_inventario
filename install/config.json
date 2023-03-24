@@ -1,0 +1,9 @@
+{
+    "db_host": "localhost",
+    "db_name": "myapp",
+    "db_user": "myuser",
+    "db_password": "mypassword",
+    "admin_username": "admin",
+    "admin_password": "admin123"
+  }
+  
