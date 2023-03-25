@@ -14,6 +14,10 @@
 <link rel="stylesheet" href="../assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css">
 <!-- Custom Css -->
 <link  rel="stylesheet" href="../assets/css/style.min.css">
+
+<!-- axios -->
+<script src="../assets/js/axios.min.js"></script>
+
 </head>
 
 <body class="theme-blush">

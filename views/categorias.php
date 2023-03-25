@@ -12,7 +12,7 @@
                         <li class="breadcrumb-item"><a href=""><i class="zmdi zmdi-home"></i>Inventario</a></li>
                         <li class="breadcrumb-item"><a href="">Equipos</a></li>
                     </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button">sss<i class="zmdi zmdi-sort-amount-desc"></i></button>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
             </div>
         </div>
@@ -25,6 +25,7 @@
                     <div class="card">
                         <div class="header">
                             <h2><strong>Tabla</strong> de Equipos</h2>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#agregarCategoria">✔Agregar categoria</button>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -53,6 +54,34 @@
         </div>
 
     </div>
+    
+    
+
+    <!-- modal agregar categoria -->
+    <div class="modal fade"  id="agregarCategoria" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="tituloVentana">Agregar categoria</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form_agregarCategoria">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre de la categoria a crear:</label>
+                            <input type="text" name ="categoria" class="form-control"  >
+                            <div class="form-text">Antes de agregar una nueva categoria, asegurate de que se categoria no exista previamente.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                    </form>                                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 </section>
 
 

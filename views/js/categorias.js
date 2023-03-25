@@ -42,3 +42,30 @@ fetch('../apis/v1/inventario/categorias')
   
 });
   
+
+//recepcion de modal para agregar categoria
+
+let formulario = document.getElementById('form_agregarCategoria');
+
+formulario.addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log('mediste un click')
+
+  let datos = new FormData(formulario)
+
+  console.log(datos)
+  console.log(datos.get('categoria'))
+
+  // Send a POST request
+  axios.post('../apis/v1/inventario/categorias/', {
+    nombre: datos.get('categoria')
+  })
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+});
+

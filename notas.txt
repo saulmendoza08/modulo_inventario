@@ -25,3 +25,18 @@ marcas*
 productos*
 proveedores*
 solicitudes*
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+axios.put('https://api.example.com/data/123', {
+    firstName: 'John',
+    lastName: 'Doe'
+  })
+  .then(function (response) {
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
