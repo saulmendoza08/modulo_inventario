@@ -75,7 +75,12 @@
                             <div class="form-text">Antes de agregar una nueva categoria, asegurate de que se categoria no exista previamente.</div>
                         </div>
                         <button type="submit" class="btn btn-primary">Crear</button>
-                    </form>                                     
+                        
+                    </form>   
+                    
+                    <div class="mt-3" id="respuesta">
+                        
+                    </div>                
                 </div>
             </div>
         </div>

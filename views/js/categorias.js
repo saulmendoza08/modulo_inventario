@@ -46,6 +46,7 @@ fetch('../apis/v1/inventario/categorias')
 //recepcion de modal para agregar categoria
 
 let formulario = document.getElementById('form_agregarCategoria');
+let respuesta = document.getElementById('respuesta');
 
 formulario.addEventListener('submit', function(e){
   e.preventDefault();
@@ -61,11 +62,18 @@ formulario.addEventListener('submit', function(e){
     nombre: datos.get('categoria')
   })
   .then((response) => {
-    console.log(response);
+    respuesta.innerHTML = `
+    <div class="alert alert-success" role="alert">
+      ${response.data.success}.
+    </div>
+    `
   })
   .catch((error) => {
-    console.error(error);
+    respuesta.innerHTML = `
+    <div class="alert alert-danger" role="alert">
+      ${error.response.data.error}.
+    </div>
+    `
   });
 
 });
-

@@ -23,7 +23,8 @@ switch ($method) {
     deleteCategories($conn);
     break;
   default:
-    echo json_encode(['error' => 'Método no soportado']);
+    http_response_code(405);
+    echo json_encode(['error' => 'Método no permitido']);
     break;
 }
   
@@ -76,13 +77,16 @@ function addCategories($conn) {
     $stmt->bind_param("s", $nombre);
 
     if ($stmt->execute()) {
-      echo json_encode(['success' => 'Categoria creada correctamente']);
+      http_response_code(201);
+      echo json_encode(['success' => 'Categoría creada correctamente']);
     } else {
-      echo json_encode(['error' => 'Error al crear categoria']);
+      http_response_code(500);
+      echo json_encode(['error' => 'Error al crear categoría']);
     }
 
     $stmt->close();
   } else {
+    http_response_code(400);
     echo json_encode(['error' => 'Datos incompletos']);
   }
 
@@ -91,27 +95,35 @@ function addCategories($conn) {
 
 
 function deleteCategories($conn) {
-  $id = $_GET['id'];
+  $id = isset($_GET['id']) ? $_GET['id'] : null;
 
-  if (!empty($id)) {
-    $sql = "DELETE FROM categorias WHERE id = ?";
-    $stmt = $conn->prepare($sql);
-
-    $stmt->bind_param("i", $id);
-
-    if ($stmt->execute()) {
-      echo json_encode(['success' => 'Categoria eliminada correctamente']);
-    } else {
-      echo json_encode(['error' => 'Error al eliminar categoria']);
-    }
-
-    $stmt->close();
-  } else {
+  if (!$id) {
+    http_response_code(400);
     echo json_encode(['error' => 'ID no especificado']);
+    return;
   }
 
+  $sql = "DELETE FROM categorias WHERE id = ?";
+  $stmt = $conn->prepare($sql);
+
+  $stmt->bind_param("i", $id);
+
+  if ($stmt->execute()) {
+    if ($stmt->affected_rows === 0) {
+      http_response_code(404);
+      echo json_encode(['error' => 'No se encontró la categoría especificada']);
+    } else {
+      echo json_encode(['success' => 'Categoría eliminada correctamente']);
+    }
+  } else {
+    http_response_code(500);
+    echo json_encode(['error' => 'Error al eliminar categoría']);
+  }
+
+  $stmt->close();
   $conn->close();
 }
+
 
 
 function updateCategories($conn) {
@@ -119,23 +131,25 @@ function updateCategories($conn) {
   $data = json_decode($json, true);
 
   if (!empty($data['id']) && !empty($data['nombre'])) {
-      $id = $data['id'];
-      $nombre = $data['nombre'];
+    $id = $data['id'];
+    $nombre = $data['nombre'];
 
-      $sql = "UPDATE categorias SET nombre = ?  WHERE id = ?";
-      $stmt = $conn->prepare($sql);
+    $sql = "UPDATE categorias SET nombre = ? WHERE id = ?";
+    $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("si", $nombre, $id);
+    $stmt->bind_param("si", $nombre, $id);
 
-      if ($stmt->execute()) {
+    if ($stmt->execute()) {
       echo json_encode(['success' => 'Categoria actualizada correctamente']);
-      } else {
-      echo json_encode(['error' => 'Error al actualizar Categoria']);
-      }
+    } else {
+      http_response_code(500); // error interno del servidor
+      echo json_encode(['error' => 'Error al actualizar la categoria. Por favor, intenta de nuevo más tarde.']);
+    }
 
-      $stmt->close();
+    $stmt->close();
   } else {
-      echo json_encode(['error' => 'Datos incompletos']);
+    http_response_code(400); // solicitud incorrecta
+    echo json_encode(['error' => 'Datos incompletos. Por favor, proporciona un ID de categoría y un nombre de categoría válido.']);
   }
 
   $conn->close();
