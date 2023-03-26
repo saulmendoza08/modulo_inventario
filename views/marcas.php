@@ -25,6 +25,8 @@
                     <div class="card">
                         <div class="header">
                             <h2><strong>Tabla</strong> de Marcas</h2>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#agregarCategoria">✔Agregar marca</button>
+
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -33,14 +35,16 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre de la marca</th>
-                                            <th>Id_categoria</th>
+                                            <th>Categoria</th>
+                                            <th style="visibility:collapse; display:none;">Id_categoria</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre de la marca</th>
-                                            <th>Id_categoria</th>
+                                            <th>Categoria</th>
+                                            <th style="visibility:collapse; display:none;">Id_categoria</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -55,7 +59,37 @@
         </div>
 
     </div>
+    
 </section>
+
+
+
+
+<!-- Modal -->
+    <div class="modal fade" id="agregarCategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crear nueva Marca</h5>
+                </div>
+                <form id="form_agregarCategoria" action="" method="POST">
+
+                    <div class="modal-body">
+                        <label for="categoria_lista">Seleccione la categoria a la que pertenece la marca:</label>
+                        <select id="categoria_lista" class="form-control show-tick ms search-select" name="categoria" data-placeholder="Asignar a alguien en especifico"></select>
+                        <label for="nombre_marca">Escriba el nombre de la nueva marca:</label>
+                        <input type="text" class="form-control" id="nombre_marca" name="nombre_marca" placeholder="Nombre de la marca" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="btn_guardar_categoria" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+                <div class="mt-3" id="respuesta_modal">
+
+            </div>
+        </div>
+    </div>
+<!--Fin modal boostrap-->
 
 <?php require_once ('../views/includes/footer.php');?>
 <script src="./js/marcas.js"></script>

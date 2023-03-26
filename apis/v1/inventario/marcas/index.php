@@ -23,6 +23,7 @@ switch ($method) {
     deleteMarcas($conn);
     break;
   default:
+    http_response_code(405);
     echo json_encode(['error' => 'Método no soportado']);
     break;
 }
@@ -32,11 +33,11 @@ function getMarcas($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, nombre, id_categoria FROM marcas WHERE id = ?";
+    $sql = "SELECT marcas.id, marcas.nombre, marcas.id_categoria, categorias.nombre as nombre_categoria FROM marcas INNER JOIN categorias on categorias.id=marcas.id_categoria WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, nombre, id_categoria FROM marcas";
+    $sql = "SELECT marcas.id, marcas.nombre, marcas.id_categoria, categorias.nombre as nombre_categoria FROM marcas INNER JOIN categorias on categorias.id=marcas.id_categoria;";
     $stmt = $conn->prepare($sql);
   }
 
@@ -51,6 +52,7 @@ function getMarcas($conn) {
         'id' => $row['id'],
         'nombre' => $row['nombre'],
         'id_categoria' => $row['id_categoria'],
+        'nombre_categoria' => $row['nombre_categoria']
       ];
     }
 
@@ -78,13 +80,16 @@ function addMarcas($conn) {
     $stmt->bind_param("si", $nombre, $id_categoria);
 
     if ($stmt->execute()) {
+      http_response_code(201);
       echo json_encode(['success' => 'Marca creada correctamente']);
     } else {
+      http_response_code(500);
       echo json_encode(['error' => 'Error al crear Marca']);
     }
 
     $stmt->close();
   } else {
+    http_response_code(400);
     echo json_encode(['error' => 'Datos incompletos']);
   }
 
