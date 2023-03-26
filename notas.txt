@@ -1,3 +1,36 @@
+SOLICITUD (al crear la solicitud)
+
+nro sol numero   {nro_solicitud}
+fecha sol texto{fecha_sol}
+ticket opciones -traer{ticket}
+pc opciones -traer {pc}
+servicio opciones -traer {servicio}
+estado 
+
+PRODUCTO (al crear la solicitud)
+
+codigo del bien numero | detalle del bien | cant solicitada  numero
+
+
+LLEGADA DEL BIEN (al llegar el bien)
+
+
+cont recibida  (traer < que cantidad solicitada)
+remito texto
+oc num
+fecha recepcion texto (>= fecha de solicitud)
+
+
+
+
+
+
+
+--------------
+
+
+
+
 ya
 
 equipos *api
