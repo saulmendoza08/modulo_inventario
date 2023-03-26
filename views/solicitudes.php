@@ -25,6 +25,9 @@
                     <div class="card">
                         <div class="header">
                             <h2><strong>Tabla</strong> de Solicitudes</h2>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#agregarProveedor">✔Agregar Solicitud</button>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#agregarProveedor"><strong>+</strong>Agregar productos a una solicitud</button>
+
                         </div>
                         <div class="body">
                             <div class="table-responsive">
