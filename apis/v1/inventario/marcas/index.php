@@ -33,11 +33,11 @@ function getMarcas($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT marcas.id, marcas.nombre, marcas.id_categoria, categorias.nombre as nombre_categoria FROM marcas INNER JOIN categorias on categorias.id=marcas.id_categoria WHERE id = ?";
+    $sql = "SELECT marcas.id, marcas.nombre FROM marcas  WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT marcas.id, marcas.nombre, marcas.id_categoria, categorias.nombre as nombre_categoria FROM marcas INNER JOIN categorias on categorias.id=marcas.id_categoria;";
+    $sql = "SELECT marcas.id, marcas.nombre FROM marcas ;";
     $stmt = $conn->prepare($sql);
   }
 
@@ -50,9 +50,7 @@ function getMarcas($conn) {
     while ($row = $result->fetch_assoc()) {
       $usuarios[] = [
         'id' => $row['id'],
-        'nombre' => $row['nombre'],
-        'id_categoria' => $row['id_categoria'],
-        'nombre_categoria' => $row['nombre_categoria']
+        'nombre' => $row['nombre']
       ];
     }
 
@@ -70,14 +68,13 @@ function addMarcas($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['nombre']) && !empty($data['id_categoria'])) {
+  if (!empty($data['nombre'])) {
     $nombre = $data['nombre'];
-    $id_categoria = $data['id_categoria'];
 
-    $sql = "INSERT INTO marcas (nombre, id_categoria) VALUES (?, ?)";
+    $sql = "INSERT INTO marcas (nombre) VALUES (?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("si", $nombre, $id_categoria);
+    $stmt->bind_param("s", $nombre);
 
     if ($stmt->execute()) {
       http_response_code(201);
@@ -125,15 +122,14 @@ function updateMarcas($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['nombre']) && !empty($data['id_categoria'])) {
+  if (!empty($data['id']) && !empty($data['nombre'])) {
       $id = $data['id'];
       $nombre = $data['nombre'];
-      $id_categoria = $data['id_categoria'];
 
-      $sql = "UPDATE marcas SET nombre = ?, id_categoria = ? WHERE id = ?";
+      $sql = "UPDATE marcas SET nombre = ? WHERE id = ?";
       $stmt = $conn->prepare($sql);
 
-      $stmt->bind_param("sii", $nombre, $id_categoria, $id);
+      $stmt->bind_param("si", $nombre, $id);
 
       if ($stmt->execute()) {
       echo json_encode(['success' => 'Marca actualizada correctamente']);

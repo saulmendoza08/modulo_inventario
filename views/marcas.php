@@ -35,16 +35,12 @@
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre de la marca</th>
-                                            <th>Categoria</th>
-                                            <th style="visibility:collapse; display:none;">Id_categoria</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Id</th>
                                             <th>Nombre de la marca</th>
-                                            <th>Categoria</th>
-                                            <th style="visibility:collapse; display:none;">Id_categoria</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -75,8 +71,6 @@
                 <form id="form_agregarCategoria" action="" method="POST">
 
                     <div class="modal-body">
-                        <label for="categoria_lista">Seleccione la categoria a la que pertenece la marca:</label>
-                        <select id="categoria_lista" class="form-control show-tick ms search-select" name="categoria" data-placeholder="Asignar a alguien en especifico"></select>
                         <label for="nombre_marca">Escriba el nombre de la nueva marca:</label>
                         <input type="text" class="form-control" id="nombre_marca" name="nombre_marca" placeholder="Nombre de la marca" required>
                     </div>

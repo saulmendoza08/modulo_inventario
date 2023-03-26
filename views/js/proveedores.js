@@ -42,4 +42,47 @@ $(function () {
 });
   
 });
-  
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//evento guardar del modal
+
+let formulario_modal = document.getElementById('form_agregarProveedor');
+let respuesta_modal = document.getElementById('respuesta_modal');
+
+formulario_modal.addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log('mediste un click')
+
+  let datos = new FormData(formulario_modal)
+
+  console.log(datos)
+  console.log(datos.get('nombre'))
+  console.log(datos.get('cuit'))
+  console.log(datos.get('domicilio'))
+  console.log(datos.get('celular'))
+
+  // Send a POST request
+  axios.post('../apis/v1/inventario/proveedores/', {
+    nombre : datos.get('nombre'),
+    cuit : datos.get('cuit'),
+    domicilio : datos.get('domicilio'),
+    celular : datos.get('celular')
+  })
+  .then((response) => {
+    respuesta_modal.innerHTML = `
+    <div class="alert alert-success" role="alert">
+      ${response.data.success}.
+    </div>
+    `
+  })
+  .catch((error) => {
+    respuesta_modal.innerHTML = `
+    <div class="alert alert-danger" role="alert">
+      ${error.response.data.error}.
+    </div>
+    `
+  });
+
+});

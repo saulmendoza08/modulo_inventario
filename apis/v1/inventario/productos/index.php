@@ -32,11 +32,11 @@ function getproductos($conn) {
   $id = isset($_GET['id']) ? $_GET['id'] : null;
 
   if ($id) {
-    $sql = "SELECT id, id_categorias, id_marcas, descripcion FROM productos WHERE id = ?";
+    $sql = "SELECT productos.id, categorias.nombre AS categoria_nomb, productos.id_categorias, marcas.nombre AS marcas_nomb, productos.id_marcas, descripcion FROM productos INNER JOIN categorias ON categorias.id = productos.id_categorias INNER JOIN marcas ON marcas.id = productos.id_marcas WHERE productos.id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
   } else {
-    $sql = "SELECT id, id_categorias, id_marcas, descripcion FROM productos";
+    $sql = "SELECT productos.id, categorias.nombre AS categoria_nomb, productos.id_categorias, marcas.nombre AS marcas_nomb, productos.id_marcas, descripcion FROM productos INNER JOIN categorias ON categorias.id = productos.id_categorias INNER JOIN marcas ON marcas.id = productos.id_marcas";
     $stmt = $conn->prepare($sql);
   }
 
@@ -49,9 +49,12 @@ function getproductos($conn) {
     while ($row = $result->fetch_assoc()) {
       $productos[] = [
         'id' => $row['id'],
+        'categoria_nomb' => $row['categoria_nomb'],
         'id_categorias' => $row['id_categorias'],
+        'marcas_nomb' => $row['marcas_nomb'],
         'id_marcas' => $row['id_marcas'],
         'descripcion' => $row['descripcion']
+
       ];
     }
 

@@ -130,7 +130,7 @@ function addSolicitud($conn) {
   $json = file_get_contents('php://input');
   $data = json_decode($json, true);
 
-  if (!empty($data['id']) && !empty($data['fecha_sol']) && !empty($data['ticket'])  && !empty($data['id_servicio'])) {
+  if (!empty($data['id']) && !empty($data['id_servicio'])) {
     $id = $data['id'];
     $fecha_sol = $data['fecha_sol'];
     $ticket = $data['ticket'];

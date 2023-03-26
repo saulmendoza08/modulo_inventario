@@ -22,8 +22,6 @@ $(function () {
         fila.innerHTML = `
           <td>${producto.id}</td>
           <td>${producto.nombre}</td>
-          <td>${producto.nombre_categoria}</td>
-          <td style="visibility:collapse; display:none;">${producto.id_categoria}</td>
         `;
 
     // Agregar la fila a la tabla
@@ -42,24 +40,7 @@ $(function () {
 });
   
 });
-  
-//agregador de opciones en el data list
-  axios.get('../apis/v1/inventario/categorias')
-    .then(function (response) {
-      // Aquí se procesan los datos de la respuesta de la API
-      var datos = response.data;
-      // Luego, se genera una cadena de opciones de HTML
-      var opciones = "";
-      datos.forEach(function (opcion) {
-        opciones += "<option value='" + opcion.id + "'>" + opcion.nombre + "</option>";
-      });
-      // Finalmente, se agrega la cadena de opciones a la lista desplegable
-      document.getElementById("categoria_lista").innerHTML = opciones;
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 //evento guardar del modal
@@ -74,13 +55,11 @@ formulario_modal.addEventListener('submit', function(e){
   let datos = new FormData(formulario_modal)
 
   console.log(datos)
-  console.log(datos.get('categoria'))
   console.log(datos.get('nombre_marca'))
 
   // Send a POST request
   axios.post('../apis/v1/inventario/marcas/', {
     nombre: datos.get('nombre_marca'),
-    id_categoria: datos.get('categoria')
   })
   .then((response) => {
     respuesta_modal.innerHTML = `
