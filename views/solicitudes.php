@@ -107,7 +107,7 @@
                         <!-- mostrar los servicios -->
                         <label for="servicio">Seleccione el servicio:</label>
                         <select id="servicio" class="form-control show-tick ms search-select" name="servicio" ></select>
-                        
+                        <hr>
                         <!-- mostrar los bienes -->
                         <div class="form-row">
                             <div class="col-12">
@@ -123,10 +123,17 @@
                         <!-- cantidad solicitada -->
                         <label for="cantidad_sol">Cantidad Solicitada:</label>
                         <input type="number" class="form-control" id="cantidad_sol" name="cantidad_sol" placeholder="Ej 6" required>
-                    </div>
+                    
+                        <button type="button" id="agregar_productos" class="btn btn-primary">Agregar producto</button>
 
+                        <!-- productos agregados -->
+                        <hr>
+                        <ul id="productos_agregados"></ul>
+                        <hr>
+                    </div>
+                    <!-- boton enviar -->
                     <div class="modal-footer">
-                        <button type="submit" id="btn_guardar_categoria" class="btn btn-primary">Guardar</button>
+                        <button type="submit" id="btn_guardar_solicitud" class="btn btn-primary">Enviar Todo</button>
                     </div>
                 </form>
                 <!-- lugar donde ira la respuesta del servidor -->

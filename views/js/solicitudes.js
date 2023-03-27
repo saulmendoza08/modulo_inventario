@@ -136,4 +136,98 @@ const filtrar = () => {
 codigo_bien.addEventListener('keyup', filtrar);
 
 
-//apis/v1/inventario/productos?id=28225512
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+//evento guardar del modal
+
+const formulario_modal = document.getElementById('form_agregarSolicitud');
+const respuesta_modal = document.getElementById('respuesta_modal');
+const agregar_productos = document.getElementById('agregar_productos');
+const productos_agregados = document.getElementById('productos_agregados');
+
+formulario_modal.addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log('mediste un click')
+
+  let datos = new FormData(formulario_modal)
+
+  console.log(datos)
+  console.log("Numero de solicitud: " + datos.get('nro_solicitud'))
+  console.log("Fecha de solicitud: " + datos.get('fecha_sol'))
+  console.log("Ticket: " + datos.get('ticket'))
+  console.log("pc: " + datos.get('pc'))
+  console.log("servicio: " + datos.get('servicio'))
+  console.log("codigo bien: " + datos.get('codigo_bien'))
+  console.log("Detalle bien: " + document.getElementById('detalle_bien').textContent)
+  console.log("Cantidad solicitada: " + datos.get('cantidad_sol'))
+
+  // // Send a POST request
+  // axios.post('../apis/v1/inventario/solicitudes_compra', {
+  //   nombre: datos.get('nombre_marca'),
+  // })
+  // .then((response) => {
+  //   respuesta_modal.innerHTML = `
+  //   <div class="alert alert-success" role="alert">
+  //     ${response.data.success}.
+  //   </div>
+  //   `
+  // })
+  // .catch((error) => {
+  //   respuesta_modal.innerHTML = `
+  //   <div class="alert alert-danger" role="alert">
+  //     ${error.response.data.error}.
+  //   </div>
+  //   `
+  // });
+});
+
+
+
+  //lista de productos a agregar
+  let lista_productos = []
+  agregar_productos.addEventListener('click', function(){
+    console.log('mediste un click a agregar producto')
+      
+    let datos = new FormData(formulario_modal)
+
+    console.log(datos)
+    console.log("Numero de solicitud: " + datos.get('nro_solicitud'))
+    console.log("Fecha de solicitud: " + datos.get('fecha_sol'))
+    console.log("Ticket: " + datos.get('ticket'))
+    console.log("pc: " + datos.get('pc'))
+    console.log("servicio: " + datos.get('servicio'))
+    console.log("codigo bien: " + datos.get('codigo_bien'))
+    console.log("Detalle bien: " + document.getElementById('detalle_bien').textContent)
+    console.log("Cantidad solicitada: " + datos.get('cantidad_sol'))
+
+    producto_temp = {
+      nro_solicitud: datos.get('nro_solicitud'),
+      fecha_sol: datos.get('fecha_sol'),
+      ticket: datos.get('ticket'),
+      pc: datos.get('pc'),
+      servicio: datos.get('servicio'),
+      codigo_bien: datos.get('codigo_bien'),
+      detalle_bien: document.getElementById('detalle_bien').textContent,
+      cantidad_sol: datos.get('cantidad_sol'),
+    }
+    lista_productos.push(producto_temp);
+    console.log(lista_productos);
+
+
+    //Borrar los campos del formulario
+    document.getElementById('codigo_bien').value = "";
+    document.getElementById('cantidad_sol').value = "";
+
+    //mostrar los productos agregados
+    productos_agregados.innerHTML = "";
+    for(producto of lista_productos){
+      productos_agregados.innerHTML += `
+      <li>${producto.codigo_bien} - ${producto.detalle_bien} </li>
+    `;
+
+    }
+    
+
+  })
