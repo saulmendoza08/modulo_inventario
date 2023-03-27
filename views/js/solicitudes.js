@@ -145,7 +145,7 @@ codigo_bien.addEventListener('keyup', filtrar);
 const formulario_modal = document.getElementById('form_agregarSolicitud');
 const respuesta_modal = document.getElementById('respuesta_modal');
 const agregar_productos = document.getElementById('agregar_productos');
-const productos_agregados = document.getElementById('productos_agregados');
+const lista = document.getElementById('lista');
 
 formulario_modal.addEventListener('submit', function(e){
   e.preventDefault();
@@ -184,50 +184,43 @@ formulario_modal.addEventListener('submit', function(e){
 });
 
 
+///////////////////////////////////////////////////////////////////////////////////////////
 
   //lista de productos a agregar
-  let lista_productos = []
   agregar_productos.addEventListener('click', function(){
     console.log('mediste un click a agregar producto')
-      
+    
     let datos = new FormData(formulario_modal)
 
-    console.log(datos)
-    console.log("Numero de solicitud: " + datos.get('nro_solicitud'))
-    console.log("Fecha de solicitud: " + datos.get('fecha_sol'))
-    console.log("Ticket: " + datos.get('ticket'))
-    console.log("pc: " + datos.get('pc'))
-    console.log("servicio: " + datos.get('servicio'))
-    console.log("codigo bien: " + datos.get('codigo_bien'))
-    console.log("Detalle bien: " + document.getElementById('detalle_bien').textContent)
-    console.log("Cantidad solicitada: " + datos.get('cantidad_sol'))
+    if( document.getElementById('codigo_bien').value !== "" && document.getElementById('cantidad_sol').value !== "" ){
+      //agregar producto a la lista
+      let contenido = `
+      <div class="alert alert-primary d-flex align-items-center justify-content-between">
+        <p>
+          ${datos.get('codigo_bien')} - ${document.getElementById('detalle_bien').textContent} - ${datos.get('cantidad_sol')}
+        </p>
+        <button type="button" class="btn btn-danger inline" onclick="eliminar(this)">✖</button>
+      </div>
+      `;
 
-    producto_temp = {
-      nro_solicitud: datos.get('nro_solicitud'),
-      fecha_sol: datos.get('fecha_sol'),
-      ticket: datos.get('ticket'),
-      pc: datos.get('pc'),
-      servicio: datos.get('servicio'),
-      codigo_bien: datos.get('codigo_bien'),
-      detalle_bien: document.getElementById('detalle_bien').textContent,
-      cantidad_sol: datos.get('cantidad_sol'),
+      lista.innerHTML += contenido;
+    }else{
+      Swal.fire({     
+        icon: 'error', //error, warning, info, success
+        title: 'Datos incompletos', //titulo del modal
+        text: 'No puede agregar productos si previamente no selecciona un producto y detalla la cantidad',//mensaje del modal
+    });
     }
-    lista_productos.push(producto_temp);
-    console.log(lista_productos);
-
-
-    //Borrar los campos del formulario
-    document.getElementById('codigo_bien').value = "";
-    document.getElementById('cantidad_sol').value = "";
-
-    //mostrar los productos agregados
-    productos_agregados.innerHTML = "";
-    for(producto of lista_productos){
-      productos_agregados.innerHTML += `
-      <li>${producto.codigo_bien} - ${producto.detalle_bien} </li>
-    `;
-
-    }
+    
     
 
   })
+
+
+  //eliminar producto de la lista
+  function eliminar(e){
+    console.log('mediste un click a eliminar producto')
+    const divPadre  = e.parentNode;
+    lista.removeChild(divPadre);
+
+  }

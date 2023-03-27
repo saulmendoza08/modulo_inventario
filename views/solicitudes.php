@@ -83,9 +83,9 @@
     
 
 <!-- Modal agregar solicitud -->
-    <div class="modal fade" id="agregarSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal fade " id="agregarSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content ">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Cargar nueva solicitd de compra</h5>
                 </div>
@@ -95,24 +95,32 @@
                         <!-- Escribe el numero de solicitud -->
                         <label for="nro_solicitud">Escriba el numero de solicitud:</label>
                         <input type="number" class="form-control" id="nro_solicitud" name="nro_solicitud" placeholder="Ej 31654" required>
+
                         <!-- Escriba la fecha de la solicitud -->
                         <label for="fecha_sol">Escriba el numero de solicitud:</label>
                         <input type="date" class="form-control" id="fecha_sol" name="fecha_sol" placeholder="Ej 25-03-23" required>
+
                         <!-- mostrar tickets -->
                         <label for="ticket">Escriba el ticket:</label>
                         <input type="number" class="form-control" id="ticket" name="ticket" placeholder="Ej 31654" required>
+
                         <!-- mostrar las PCs -->
-                        <label for="pc">Seleccione la PCs:</label>
-                        <select id="pc" class="form-control show-tick ms search-select" name="pc" ></select>
+                        <label for="pc">Seleccione la PCs:</label>                   
+                        <input  class="form-control show-tick ms search-select" list="pc" name="pc" required>
+                        <datalist  id="pc"></datalist>
+
                         <!-- mostrar los servicios -->
-                        <label for="servicio">Seleccione el servicio:</label>
-                        <select id="servicio" class="form-control show-tick ms search-select" name="servicio" ></select>
+
+                        <label for="servicio">Seleccione el servicio:</label>                   
+                        <input  class="form-control show-tick ms search-select" list="servicio" name="servicio" required>
+                        <datalist  id="servicio"></datalist>
                         <hr>
+                        
                         <!-- mostrar los bienes -->
                         <div class="form-row">
                             <div class="col-12">
                                 <label for="codigo_bien">Codigo del bien:</label>
-                                <input id="codigo_bien" type="text" name="codigo_bien" class="form-control" placeholder="Ej 52252">
+                                <input id="codigo_bien" type="text" name="codigo_bien" class="form-control" placeholder="Ej 52252" required>
                             </div>
                             <div class="col">
                                 <label for="detalle_bien">Detalle:</label>
@@ -128,7 +136,11 @@
 
                         <!-- productos agregados -->
                         <hr>
-                        <ul id="productos_agregados"></ul>
+
+                        <div id="lista">
+
+                        </div>
+
                         <hr>
                     </div>
                     <!-- boton enviar -->
