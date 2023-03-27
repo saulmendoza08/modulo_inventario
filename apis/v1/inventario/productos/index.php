@@ -44,6 +44,7 @@ function getproductos($conn) {
   $result = $stmt->get_result();
 
   if ($result->num_rows > 0) {
+    
     $productos = [];
 
     while ($row = $result->fetch_assoc()) {
@@ -60,7 +61,8 @@ function getproductos($conn) {
 
     echo json_encode($productos);
   } else {
-    echo json_encode([]);
+    http_response_code(404);
+    echo json_encode(['error' => 'No se encontró ningún producto con el ID proporcionado']);
   }
 
   $stmt->close();
