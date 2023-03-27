@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-03-2023 a las 02:18:23
+-- Tiempo de generación: 28-03-2023 a las 01:38:26
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -38,7 +38,12 @@ CREATE TABLE `categorias` (
 
 INSERT INTO `categorias` (`id`, `nombre`) VALUES
 (1, 'Teclados'),
-(2, 'Mouses');
+(2, 'Mouses'),
+(3, 'Monitores'),
+(4, 'Memoria RAM'),
+(5, 'Fuente ATX'),
+(6, 'Software de tercero'),
+(7, 'ddd');
 
 -- --------------------------------------------------------
 
@@ -70,7 +75,8 @@ CREATE TABLE `items_solicitados` (
   `id` int(25) NOT NULL,
   `id_productos` int(25) NOT NULL,
   `id_solicitudes` int(11) NOT NULL,
-  `cantidad` int(25) NOT NULL,
+  `cantidad_sol` int(25) NOT NULL,
+  `cantidad_recibida` int(11) NOT NULL,
   `id_proveedor` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -78,10 +84,8 @@ CREATE TABLE `items_solicitados` (
 -- Volcado de datos para la tabla `items_solicitados`
 --
 
-INSERT INTO `items_solicitados` (`id`, `id_productos`, `id_solicitudes`, `cantidad`, `id_proveedor`) VALUES
-(1, 99652, 2222, 3, 1),
-(2, 28225512, 32432, 6, 2),
-(3, 99652, 32432, 2, 2);
+INSERT INTO `items_solicitados` (`id`, `id_productos`, `id_solicitudes`, `cantidad_sol`, `cantidad_recibida`, `id_proveedor`) VALUES
+(2, 28225512, 32432, 6, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -91,19 +95,17 @@ INSERT INTO `items_solicitados` (`id`, `id_productos`, `id_solicitudes`, `cantid
 
 CREATE TABLE `marcas` (
   `id` int(25) NOT NULL,
-  `nombre` text NOT NULL,
-  `id_categoria` int(11) NOT NULL
+  `nombre` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `marcas`
 --
 
-INSERT INTO `marcas` (`id`, `nombre`, `id_categoria`) VALUES
-(1, 'LG', 1),
-(2, 'Samsung', 1),
-(3, 'LG', 2),
-(4, 'Samsung', 2);
+INSERT INTO `marcas` (`id`, `nombre`) VALUES
+(1, 'LG'),
+(2, 'Samsung'),
+(3, 'Asus');
 
 -- --------------------------------------------------------
 
@@ -123,8 +125,8 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `id_categorias`, `id_marcas`, `descripcion`) VALUES
-(99652, 1, 1, 'Modelo 3'),
-(28225512, 2, 2, 'Modelo 222');
+(28225512, 2, 3, 'Asus Rog Spatha X Mouse Inalambrico'),
+(123123123, 1, 2, 'Teclado m44 inalambrico');
 
 -- --------------------------------------------------------
 
@@ -146,7 +148,8 @@ CREATE TABLE `proveedores` (
 
 INSERT INTO `proveedores` (`id`, `nombre`, `cuit`, `domicilio`, `celular`) VALUES
 (1, 'Gabriel Fernando Mendoza', 20414012877, 'Av. Alem 928 3B', 5493815561646),
-(2, 'Grupo Norte', 30716633140, 'Av. Juan B. Justo 1120', 5493814300043);
+(2, 'Grupo Norte', 30716633140, 'Av. Juan B. Justo 1120', 5493814300043),
+(3, 'Saul Ignacio Mendoza', 30691822849, 'Av Alem 928', 5493816049337);
 
 -- --------------------------------------------------------
 
@@ -351,8 +354,7 @@ ALTER TABLE `items_solicitados`
 -- Indices de la tabla `marcas`
 --
 ALTER TABLE `marcas`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `id_categoria` (`id_categoria`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `productos`
@@ -396,7 +398,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `estados_sc`
@@ -414,7 +416,7 @@ ALTER TABLE `items_solicitados`
 -- AUTO_INCREMENT de la tabla `marcas`
 --
 ALTER TABLE `marcas`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `proveedores`
@@ -445,12 +447,6 @@ ALTER TABLE `items_solicitados`
   ADD CONSTRAINT `items_solicitados_ibfk_1` FOREIGN KEY (`id_solicitudes`) REFERENCES `solicitudes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `items_solicitados_ibfk_2` FOREIGN KEY (`id_productos`) REFERENCES `productos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `items_solicitados_ibfk_3` FOREIGN KEY (`id_proveedor`) REFERENCES `proveedores` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `marcas`
---
-ALTER TABLE `marcas`
-  ADD CONSTRAINT `marcas_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `productos`
