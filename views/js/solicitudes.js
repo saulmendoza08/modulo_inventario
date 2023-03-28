@@ -212,6 +212,8 @@ formulario_modal.addEventListener('submit', function(e){
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+ 
+
   //tabla de productos a agregar
   agregar_productos.addEventListener('click', function(){
     console.log('mediste un click a agregar producto')
@@ -224,7 +226,7 @@ formulario_modal.addEventListener('submit', function(e){
             <td>${datos.get('codigo_bien')}</td>
             <td>${document.getElementById('detalle_bien').textContent}</td>
             <td>${datos.get('cantidad_sol')}</td>
-            <td><button id="eliminar" type="button" class="btn btn-danger inline">✖</button></td>
+            <td><button id="eliminar" type="button" class="btn btn-danger inline" onclick="eliminar(this)">✖</button></td>
       `;
 
       tabla.innerHTML += contenido;
@@ -237,11 +239,16 @@ formulario_modal.addEventListener('submit', function(e){
     }
     
     
-
   })
 
-  const boton_eliminar = document.getElementById('eliminar');
-  //eliminar producto de la tabla
-  boton_eliminar.addEventListener('click', function(){
-    console.log('mediste un click a eliminar producto')
-  })
+  
+  const eliminar = (e) => {
+    const divPadre = e.parentNode;
+    tabla.removeChild(divPadre);
+  };
+  tabla.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() === 'button') {
+      eliminar(event.target.parentNode.parentNode);
+    }
+  });
+  
