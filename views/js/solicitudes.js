@@ -145,7 +145,7 @@ codigo_bien.addEventListener('keyup', filtrar);
 const formulario_modal = document.getElementById('form_agregarSolicitud');
 const respuesta_modal = document.getElementById('respuesta_modal');
 const agregar_productos = document.getElementById('agregar_productos');
-const lista = document.getElementById('lista');
+const tabla = document.getElementById('tabla');
 
 formulario_modal.addEventListener('submit', function(e){
   e.preventDefault();
@@ -159,9 +159,35 @@ formulario_modal.addEventListener('submit', function(e){
   console.log("Ticket: " + datos.get('ticket'))
   console.log("pc: " + datos.get('pc'))
   console.log("servicio: " + datos.get('servicio'))
-  console.log("codigo bien: " + datos.get('codigo_bien'))
-  console.log("Detalle bien: " + document.getElementById('detalle_bien').textContent)
-  console.log("Cantidad solicitada: " + datos.get('cantidad_sol'))
+
+  console.log(tabla.rows)
+  let json_productos = [];
+
+  for (let index = 2; index < tabla.rows.length; index++) {
+    console.log("codigo: " + tabla.rows[index].cells[0].innerHTML);
+    console.log("descripcion: " + tabla.rows[index].cells[1].innerHTML);
+    console.log("cantidad: " + tabla.rows[index].cells[2].innerHTML);    
+    json_productos.push({
+      "codigo": tabla.rows[index].cells[0].innerHTML,
+      "descripcion": tabla.rows[index].cells[1].innerHTML,
+      "cantidad": tabla.rows[index].cells[2].innerHTML
+    });
+  }
+
+  console.log(json_productos);
+
+  let json_solicitud = []
+  json_solicitud.push({
+    "nro_solicitud": datos.get('nro_solicitud'),
+    "fecha_sol": datos.get('fecha_sol'),
+    "ticket": datos.get('ticket'),
+    "pc": datos.get('pc'),
+    "servicio": datos.get('servicio'),
+    "productos": json_productos
+  })
+
+  console.log(json_solicitud);
+
 
   // // Send a POST request
   // axios.post('../apis/v1/inventario/solicitudes_compra', {
@@ -186,24 +212,22 @@ formulario_modal.addEventListener('submit', function(e){
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-  //lista de productos a agregar
+  //tabla de productos a agregar
   agregar_productos.addEventListener('click', function(){
     console.log('mediste un click a agregar producto')
     
     let datos = new FormData(formulario_modal)
 
     if( document.getElementById('codigo_bien').value !== "" && document.getElementById('cantidad_sol').value !== "" ){
-      //agregar producto a la lista
+      //agregar producto a la tabla
       let contenido = `
-      <div class="alert alert-primary d-flex align-items-center justify-content-between">
-        <p>
-          ${datos.get('codigo_bien')} - ${document.getElementById('detalle_bien').textContent} - ${datos.get('cantidad_sol')}
-        </p>
-        <button type="button" class="btn btn-danger inline" onclick="eliminar(this)">✖</button>
-      </div>
+            <td>${datos.get('codigo_bien')}</td>
+            <td>${document.getElementById('detalle_bien').textContent}</td>
+            <td>${datos.get('cantidad_sol')}</td>
+            <td><button id="eliminar" type="button" class="btn btn-danger inline">✖</button></td>
       `;
 
-      lista.innerHTML += contenido;
+      tabla.innerHTML += contenido;
     }else{
       Swal.fire({     
         icon: 'error', //error, warning, info, success
@@ -216,11 +240,8 @@ formulario_modal.addEventListener('submit', function(e){
 
   })
 
-
-  //eliminar producto de la lista
-  function eliminar(e){
+  const boton_eliminar = document.getElementById('eliminar');
+  //eliminar producto de la tabla
+  boton_eliminar.addEventListener('click', function(){
     console.log('mediste un click a eliminar producto')
-    const divPadre  = e.parentNode;
-    lista.removeChild(divPadre);
-
-  }
+  })

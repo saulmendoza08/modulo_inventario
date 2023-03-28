@@ -137,9 +137,23 @@
                         <!-- productos agregados -->
                         <hr>
 
-                        <div id="lista">
+                        <table id = "tabla" class="table table-striped table-bordered table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Detalle</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
 
-                        </div>
+                        </table>
 
                         <hr>
                     </div>
