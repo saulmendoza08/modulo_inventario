@@ -189,24 +189,22 @@ formulario_modal.addEventListener('submit', function(e){
   console.log(json_solicitud);
 
 
-  // // Send a POST request
-  // axios.post('../apis/v1/inventario/solicitudes_compra', {
-  //   nombre: datos.get('nombre_marca'),
-  // })
-  // .then((response) => {
-  //   respuesta_modal.innerHTML = `
-  //   <div class="alert alert-success" role="alert">
-  //     ${response.data.success}.
-  //   </div>
-  //   `
-  // })
-  // .catch((error) => {
-  //   respuesta_modal.innerHTML = `
-  //   <div class="alert alert-danger" role="alert">
-  //     ${error.response.data.error}.
-  //   </div>
-  //   `
-  // });
+  // Send a POST request
+  axios.post('../apis/v1/solicitudes_compra/solicitudes_detalle.php', json_solicitud)
+  .then((response) => {
+    respuesta_modal.innerHTML = `
+    <div class="alert alert-success" role="alert">
+      ${response.data.success}.
+    </div>
+    `
+  })
+  .catch((error) => {
+    respuesta_modal.innerHTML = `
+    <div class="alert alert-danger" role="alert">
+      ${error.response.data.error}.
+    </div>
+    `
+  });
 });
 
 
